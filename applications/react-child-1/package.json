@@ -3,6 +3,10 @@
   "version": "0.0.1-beta",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
   "dependencies": {
     "@mfdemo/create-web-component-react": "file:.yalc/@mfdemo/create-web-component-react",
     "react": "^17.0.2",
@@ -14,6 +18,7 @@
     "@babel/preset-react": "^7.14.5",
     "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base",
     "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
     "webpack-merge": "^5.8.0"
   }
 }
