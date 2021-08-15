@@ -8,6 +8,11 @@
     ".yalc"
   ],
   "scripts": {
-    "build": "rm -rf lib && mkdir lib && cp src/* lib"
+    "build": "rm -rf lib && babel src --out-dir lib"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0"
   }
 }
