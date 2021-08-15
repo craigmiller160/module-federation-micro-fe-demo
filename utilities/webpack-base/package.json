@@ -3,6 +3,9 @@
   "version": "0.0.1-beta",
   "main": "index.js",
   "license": "MIT",
+  "files": [
+    "webpack.config.js"
+  ],
   "dependencies": {
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^6.2.0",
