@@ -1,7 +1,7 @@
 {
   "name": "@mfdemo/create-web-component",
   "version": "0.0.1-beta",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "files": [
     "lib",
