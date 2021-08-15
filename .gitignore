@@ -6,3 +6,4 @@ build
 .yalc
 yalc.lock
 yarn-error.log
+lib

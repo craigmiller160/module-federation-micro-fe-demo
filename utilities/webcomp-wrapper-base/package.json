@@ -2,5 +2,17 @@
   "name": "@mfdemo/webcomp-wrapper-base",
   "version": "0.0.1-beta",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "lib",
+    ".yalc"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0"
+  }
 }
