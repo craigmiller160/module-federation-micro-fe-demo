@@ -1,5 +1,5 @@
 {
-  "name": "@mfdemo/webcomp-wrapper-react",
+  "name": "@mfdemo/create-web-component-react",
   "version": "0.0.1-beta",
   "main": "index.js",
   "license": "MIT",
@@ -19,6 +19,6 @@
     "react-dom": "^17.0.2"
   },
   "dependencies": {
-    "@mfdemo/webcomp-wrapper-base": "file:.yalc/@mfdemo/webcomp-wrapper-base"
+    "@mfdemo/create-web-component": "file:.yalc/@mfdemo/create-web-component"
   }
 }

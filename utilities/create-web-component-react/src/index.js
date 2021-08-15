@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createMicroFrontendElement } from '@mfdemo/webcomp-wrapper-base';
+import { createWebComponent } from '@mfdemo/create-web-component';
 
-export const wrapAndRegisterWebComponent = (name, ReactComp) => {
-    const WebComponent = createMicroFrontendElement({
+export const createWebComponentReact = (name, ReactComp) => {
+    const WebComponent = createWebComponent({
         connectMicroFrontend: (root) => ReactDOM.render(<ReactComp />, root),
         disconnectMicroFrontend: (root) => ReactDOM.unmountComponentAtNode(root)
     });

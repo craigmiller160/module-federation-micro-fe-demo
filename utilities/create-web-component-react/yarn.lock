@@ -936,7 +936,7 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@mfdemo/webcomp-wrapper-base@file:.yalc/@mfdemo/webcomp-wrapper-base":
+"@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component":
   version "0.0.1-beta"
 
 "@nicolo-ribaudo/chokidar-2@2.1.8-no-fsevents.2":

@@ -1,4 +1,4 @@
-export const createMicroFrontendElement = ({
+export const createWebComponent = ({
     useShadowRoot = true,
     connectMicroFrontend,
     disconnectMicroFrontend
