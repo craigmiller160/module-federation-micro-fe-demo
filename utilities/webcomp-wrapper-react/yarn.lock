@@ -2,6 +2,9 @@
 # yarn lockfile v1
 
 
+"@mfdemo/webcomp-wrapper-base@file:.yalc/@mfdemo/webcomp-wrapper-base":
+  version "0.0.1-beta"
+
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"

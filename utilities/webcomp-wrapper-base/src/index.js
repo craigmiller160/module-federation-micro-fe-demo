@@ -1,4 +1,4 @@
-const createMicroFrontendElement = ({
+export const createMicroFrontendElement = ({
     useShadowRoot = true,
     connectMicroFrontend,
     disconnectMicroFrontend
@@ -15,5 +15,3 @@ const createMicroFrontendElement = ({
         disconnectMicroFrontend(root);
     }
 };
-
-export default createMicroFrontendElement;
