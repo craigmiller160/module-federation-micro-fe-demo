@@ -1,15 +1,18 @@
 const createMicroFrontendElement = ({
+    useShadowRoot = true,
     connectMicroFrontend,
     disconnectMicroFrontend
 }) => class extends HTMLElement {
     shadowRoot = this.attachShadow({ mode: 'open' });
 
     connectedCallback() {
-        connectMicroFrontend(this.shadowRoot);
+        const root = useShadowRoot ? this.shadowRoot : this;
+        connectMicroFrontend(root);
     }
 
     disconnectedCallback() {
-        disconnectMicroFrontend(this.shadowRoot);
+        const root = useShadowRoot ? this.shadowRoot : this;
+        disconnectMicroFrontend(root);
     }
 };
 
