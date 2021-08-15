@@ -1,0 +1,11 @@
+{
+  "name": "@mfdemo/react-child-1",
+  "version": "0.0.1-beta",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@mfdemo/create-web-component-react": "file:.yalc/@mfdemo/create-web-component-react",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
