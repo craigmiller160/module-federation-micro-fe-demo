@@ -1,4 +1,4 @@
-const createMicroFrontendElement = ({
+export const createMicroFrontendElement = ({
     useShadowRoot = true,
     connectMicroFrontend,
     disconnectMicroFrontend
@@ -14,8 +14,4 @@ const createMicroFrontendElement = ({
         const root = useShadowRoot ? this.shadowRoot : this;
         disconnectMicroFrontend(root);
     }
-};
-
-module.exports = {
-    createMicroFrontendElement
 };
