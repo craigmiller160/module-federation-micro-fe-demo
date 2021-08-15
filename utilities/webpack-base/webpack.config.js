@@ -46,7 +46,8 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader'
-                ]
+                ],
+                sideEffects: true
             },
             {
                 test: /\.module\.css$/,
@@ -68,9 +69,12 @@ module.exports = {
                     'css-loader',
                     {
                         loader: 'sass-loader',
-                        sourceMap: process.env.NODE_ENV !== PRODUCTION_ENV
+                        options: {
+                            sourceMap: process.env.NODE_ENV !== PRODUCTION_ENV
+                        }
                     }
-                ]
+                ],
+                sideEffects: true
             },
             {
                 test: /\.module\.scss$/,
@@ -84,7 +88,9 @@ module.exports = {
                     },
                     {
                         loader: 'sass-loader',
-                        sourceMap: process.env.NODE_ENV !== PRODUCTION_ENV
+                        options: {
+                            sourceMap: process.env.NODE_ENV !== PRODUCTION_ENV
+                        }
                     }
                 ]
             }
