@@ -89,5 +89,12 @@ module.exports = {
                 ]
             }
         ]
+    },
+    devServer: {
+        contentBase: path.join(process.cwd(), 'src'),
+        hot: true,
+        historyApiFallback: {
+            index: '/'
+        }
     }
 };
