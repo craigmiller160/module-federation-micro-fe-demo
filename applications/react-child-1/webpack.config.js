@@ -1,5 +1,5 @@
-const baseConfig = require('@mfdemo/webpack-base');
-const merge = require('webpack-merge');
+const baseConfig = require('@mfdemo/webpack-base/webpack.config');
+const { merge } = require('webpack-merge');
 
 module.exports = merge(
     baseConfig,
