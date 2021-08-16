@@ -1,0 +1,19 @@
+{
+  "name": "@mfdemo/svelte-child-1",
+  "version": "0.0.1-beta",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base",
+    "svelte": "^3.42.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.16.1",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
