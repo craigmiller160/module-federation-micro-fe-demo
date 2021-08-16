@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'; // TODO try getting rid of React import
+import { useEffect, useState } from 'react';
 import classes from './App.module.scss';
 import { UserList } from './UserList';
 import { UserDetails } from './UserDetails';
