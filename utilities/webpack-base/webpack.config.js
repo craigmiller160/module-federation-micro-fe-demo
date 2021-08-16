@@ -1,14 +1,18 @@
 const path = require('path');
+const fs = require('fs');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { merge } = require('webpack-merge');
 
 const PRODUCTION_ENV = 'production';
 
-module.exports = {
+const indexHtmlPath = path.join(process.cwd(), 'src', 'index.html');
+const indexHtmlExists = fs.existsSync(indexHtmlPath);
+
+const baseConfig = {
     mode: process.env.NODE_ENV,
     entry: path.join(process.cwd(), 'src', 'index.js'),
     output: {
@@ -31,12 +35,10 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: path.join(process.cwd(), 'src', 'index.html')
-        }),
         new MiniCssExtractPlugin({
             filename: 'assets/css/[name].[contenthash].css'
-        })
+        }),
+        new CleanWebpackPlugin()
     ],
     module: {
         rules: [
@@ -104,3 +106,18 @@ module.exports = {
         }
     }
 };
+
+const htmlConfig = {
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: indexHtmlPath
+        })
+    ]
+};
+
+const configs = [baseConfig];
+if (indexHtmlExists) {
+    configs.push(htmlConfig);
+}
+
+module.exports = merge(configs);
