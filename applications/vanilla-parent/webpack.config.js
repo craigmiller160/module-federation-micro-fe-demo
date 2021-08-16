@@ -15,6 +15,13 @@ module.exports = merge(
                         '^/reactChild1': ''
                     }
                 },
+                '/svelteChild1': {
+                    target: 'http://localhost:3003',
+                    changeOrigin: true,
+                    pathRewrite: {
+                        '^/svelteChild1': ''
+                    }
+                },
                 '/globalStore': {
                     target: 'http://localhost:3001',
                     changeOrigin: true,
@@ -29,7 +36,8 @@ module.exports = merge(
                 name: 'vanillaParent',
                 filename: 'remoteEntry.js',
                 remotes: {
-                    reactChild1: 'reactChild1@/reactChild1/remoteEntry.js'
+                    reactChild1: 'reactChild1@/reactChild1/remoteEntry.js',
+                    svelteChild1: 'svelteChild1@/svelteChild1/remoteEntry.js'
                 }
             })
         ]
