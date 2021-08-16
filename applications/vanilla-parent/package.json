@@ -1,0 +1,9 @@
+{
+  "name": "@mfdemo/vanilla-parent",
+  "version": "0.0.1-beta",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base"
+  }
+}
