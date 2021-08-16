@@ -38,12 +38,16 @@
 <script>
     import { Link, useParams } from 'svelte-navigator';
 
+    const params = useParams();
+
     export let users = [];
 
-    let userId = 0;
-    const params = useParams();
+    let selectedUser = null;
+    // TODO need to unsubscribe
     params.subscribe((paramDetails) => {
-        userId = paramDetails.userId ? parseInt(paramDetails.userId) : 0;
+        const userId = paramDetails.userId ? parseInt(paramDetails.userId) : 0;
+        // TODO need to re-run if users changes
+        selectedUser = users.find((user) => user.id === userId);
     });
 </script>
 
@@ -51,7 +55,7 @@
     <ul>
         {#each users as user}
             <Link to={ `/${user.id}` }>
-                <li class:active={ user.id === userId }>
+                <li class:active={ user.id === selectedUser?.id }>
                     { user.first_name } { user.last_name }
                 </li>
             </Link>
