@@ -3,7 +3,7 @@ import classes from './Content.module.scss';
 import { UserList } from './UserList';
 import { UserDetails } from './UserDetails';
 import axios from 'axios';
-import { Route, useLocation } from 'react-router';
+import { Redirect, Route, Switch, useLocation } from 'react-router';
 
 export const Content = () => {
     const location = useLocation();
@@ -27,19 +27,22 @@ export const Content = () => {
             <div className={ classes.title }>
                 <h1>React Child 1</h1>
             </div>
-            <Route
-                path="/:userId"
-                render={ () => (
-                    <div className={ classes.content }>
-                        <UserList
-                            users={ state.users }
-                        />
-                        <UserDetails
-                            users={ state.users }
-                        />
-                    </div>
-                ) }
-            />
+            <Switch>
+                <Route
+                    path="/:userId"
+                    render={ () => (
+                        <div className={ classes.content }>
+                            <UserList
+                                users={ state.users }
+                            />
+                            <UserDetails
+                                users={ state.users }
+                            />
+                        </div>
+                    ) }
+                />
+                <Redirect to="/0" />
+            </Switch>
         </div>
     );
 };
