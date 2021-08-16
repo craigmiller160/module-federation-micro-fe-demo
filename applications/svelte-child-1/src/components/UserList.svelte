@@ -1,9 +1,4 @@
 <style lang="scss">
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
   .UserList {
     margin: 1rem;
 
@@ -12,7 +7,12 @@
       margin: 0;
       padding: 0;
 
-      li {
+      :global(a) {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      :global(li) {
         font-size: 1.5rem;
         border: 1px solid darkgreen;
         padding: 1rem;
@@ -36,13 +36,13 @@
 <script>
     import { Link, useParams } from 'svelte-navigator';
 
+    export let users = [];
+
     let userId = 0;
     const params = useParams();
     params.subscribe((paramDetails) => {
         userId = paramDetails.userId ? parseInt(paramDetails.userId) : 0;
     });
-
-    export let users = [];
 </script>
 
 <div class="UserList">
