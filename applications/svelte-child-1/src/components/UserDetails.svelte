@@ -18,11 +18,29 @@
 
 <script>
     import { createGetSelectedUser } from './createGetSelectedUser';
+    import { subscribe, updateState } from 'globalStore';
+    import { afterUpdate, beforeUpdate, onDestroy, onMount } from 'svelte';
 
     export let users = [];
 
     const getSelectedUser = createGetSelectedUser();
     $: selectedUser = getSelectedUser(users);
+
+    let notes = '';
+
+    beforeUpdate(() => {
+        console.log('AfterUpdate', selectedUser?.id); // TODO delete this
+        subscribe((state) => {
+            console.log('Subscribing', state.userNotes); // TODO delete this
+            notes = state.userNotes?.[selectedUser?.id] ?? '';
+        })();
+    });
+
+    const updateNotes = (text) => updateState((draft) => {
+        const userNotes = draft.userNotes ?? {};
+        userNotes[selectedUser.id] = text;
+        draft.userNotes = userNotes;
+    });
 </script>
 
 <div class="UserDetails">
@@ -41,6 +59,9 @@
         <strong>Notes:</strong>
     </span>
     {#if selectedUser !== null}
-        <textarea></textarea>
+        <textarea
+                value={ notes }
+                on:input={ (event) => updateNotes(event.target.value) }
+        />
     {/if}
 </div>
