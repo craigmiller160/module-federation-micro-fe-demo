@@ -1,8 +1,6 @@
 import classes from './UserDetails.module.scss';
 import { userPropType } from '../propTypes/userPropType';
 import PropTypes from 'prop-types';
-import { useRouteMatch } from 'react-router';
-import { useMemo } from 'react';
 import { useSelectedUser } from './useSelectedUser';
 
 export const UserDetails = (props) => {
@@ -22,6 +20,10 @@ export const UserDetails = (props) => {
                 <strong>Email: </strong>
                 { selectedUser?.email }
             </p>
+            <span>
+                <strong>Notes:</strong>
+            </span>
+            <textarea />
         </div>
     );
 };
