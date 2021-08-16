@@ -1,0 +1,9 @@
+{
+  "name": "@mfdemo/create-web-component-svelte",
+  "version": "0.0.1-beta",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@mfdemo/create-web-component": "file:.yalc/@mfdemo/create-web-component"
+  }
+}
