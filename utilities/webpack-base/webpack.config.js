@@ -25,6 +25,7 @@ const baseConfig = {
             path.join(process.cwd(), 'node_modules')
         ]
     },
+    devtool: 'eval-source-map',
     optimization: {
         usedExports: process.env.NODE_ENV === PRODUCTION_ENV,
         minimize: process.env.NODE_ENV === PRODUCTION_ENV,
