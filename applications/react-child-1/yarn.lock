@@ -928,7 +928,7 @@
 "@mfdemo/create-web-component-react@file:.yalc/@mfdemo/create-web-component-react":
   version "0.0.1-beta"
   dependencies:
-    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-react-0.0.1-beta-4d7a8137-4037-48b0-8fa6-a5d0abf3d91b-1629119777389/node_modules/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-react-0.0.1-beta-0b73ccdc-ccaf-4d03-9aaa-524e8c6c2af4-1629120154060/node_modules/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component"
 
 "@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component":
   version "0.0.1-beta"
@@ -1761,6 +1761,11 @@ core-js-compat@^3.14.0, core-js-compat@^3.16.0:
   dependencies:
     browserslist "^4.16.7"
     semver "7.0.0"
+
+core-js@^3.16.1:
+  version "3.16.1"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/core-js/-/core-js-3.16.1.tgz#f4485ce5c9f3c6a7cb18fa80488e08d362097249"
+  integrity sha512-AAkP8i35EbefU+JddyWi12AWE9f2N/qr/pwnDtWz4nyUIBGMJPX99ANFFRSw6FefM374lDujdtLDyhN2A/btHw==
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -4193,7 +4198,7 @@ regenerate@^1.4.0:
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/regenerate/-/regenerate-1.4.2.tgz#b9346d8827e8f5a32f7ba29637d398b69014848a"
   integrity sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==
 
-regenerator-runtime@^0.13.4:
+regenerator-runtime@^0.13.4, regenerator-runtime@^0.13.9:
   version "0.13.9"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
   integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
