@@ -8,7 +8,7 @@ export const UserDetails = (props) => {
     const match = useRouteMatch();
     const selectedUser = useMemo(() =>
             props.users.find((user) => user.id === parseInt(match.params.userId)),
-        [match.params.userId]);
+        [match.params.userId, props.users]);
 
     return (
         <div className={ classes.UserDetails }>

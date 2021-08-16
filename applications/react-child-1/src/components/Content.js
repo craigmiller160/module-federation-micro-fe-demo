@@ -3,7 +3,7 @@ import classes from './Content.module.scss';
 import { UserList } from './UserList';
 import { UserDetails } from './UserDetails';
 import axios from 'axios';
-import { useLocation } from 'react-router';
+import { Route, useLocation } from 'react-router';
 
 export const Content = () => {
     const location = useLocation();
@@ -32,8 +32,13 @@ export const Content = () => {
                 <UserList
                     users={ state.users }
                 />
-                <UserDetails
-                    users={ state.users }
+                <Route
+                    path="/:userId"
+                    render={ () => (
+                        <UserDetails
+                            users={ state.users }
+                        />
+                    ) }
                 />
             </div>
         </div>
