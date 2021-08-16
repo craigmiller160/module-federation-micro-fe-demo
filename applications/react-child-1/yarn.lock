@@ -928,7 +928,7 @@
 "@mfdemo/create-web-component-react@file:.yalc/@mfdemo/create-web-component-react":
   version "0.0.1-beta"
   dependencies:
-    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-react-0.0.1-beta-bfcd1a3c-d3f6-4fb9-8b95-2c66117b38d2-1629124857780/node_modules/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-react-0.0.1-beta-260add5b-ff8b-4584-a683-a2b3bf7711d0-1629128959599/node_modules/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component"
 
 "@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component":
   version "0.0.1-beta"
@@ -948,6 +948,7 @@
     webpack "^5.50.0"
     webpack-cli "^4.7.2"
     webpack-dev-server "^3.11.2"
+    webpack-merge "^5.8.0"
 
 "@trysound/sax@0.1.1":
   version "0.1.1"
