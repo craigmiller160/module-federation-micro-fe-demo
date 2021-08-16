@@ -35,6 +35,7 @@ export const App = () => {
                 <UserList
                     users={ state.users }
                     selectUser={ selectUser }
+                    selectedUser={ state.selectedUser }
                 />
                 <UserDetails />
             </div>

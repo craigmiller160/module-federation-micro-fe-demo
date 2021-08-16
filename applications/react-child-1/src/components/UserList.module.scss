@@ -1,3 +1,27 @@
 .UserList {
+  margin: 1rem;
 
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: 1.5rem;
+      border: 1px solid darkgreen;
+      padding: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darkgreen;
+        color: white;
+      }
+
+      &.active {
+        background-color: darkgreen;
+        color: white;
+      }
+    }
+  }
 }
