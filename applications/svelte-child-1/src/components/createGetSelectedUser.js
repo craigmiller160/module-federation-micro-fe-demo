@@ -9,7 +9,6 @@ export const createGetSelectedUser = () => {
     });
 
     onDestroy(() => {
-        // TODO will this work
         paramsUnsubscribe();
     });
 
