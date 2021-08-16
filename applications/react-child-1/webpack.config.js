@@ -5,7 +5,7 @@ module.exports = merge(
     baseConfig,
     {
         devServer: {
-            port: 3001
+            port: 3002
         },
         module: {
             rules: [

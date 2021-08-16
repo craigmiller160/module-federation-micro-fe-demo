@@ -1,0 +1,13 @@
+{
+  "name": "@mfdemo/global-store",
+  "version": "0.0.1-beta",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base",
+    "cross-env": "^7.0.3",
+    "webpack-merge": "^5.8.0"
+  }
+}
