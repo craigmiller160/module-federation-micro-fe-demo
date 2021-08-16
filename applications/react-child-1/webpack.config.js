@@ -30,7 +30,7 @@ module.exports = merge(
         },
         plugins: [
             new ModuleFederationPlugin({
-                name: 'globalStore',
+                name: 'reactChild1',
                 filename: 'remoteEntry.js',
                 remotes: {
                     globalStore: 'globalStore@/globalStore/remoteEntry.js'
