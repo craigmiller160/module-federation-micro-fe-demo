@@ -37,7 +37,9 @@ export const App = () => {
                     selectUser={ selectUser }
                     selectedUser={ state.selectedUser }
                 />
-                <UserDetails />
+                <UserDetails
+                    selectedUser={ state.selectedUser }
+                />
             </div>
         </div>
     );
