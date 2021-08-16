@@ -11,10 +11,9 @@ export const UserList = (props) => {
                     props.users.map((user) => {
                         const className = user.id === props.selectedUser?.id ? classes.active : null;
                         return (
-                            <Link to={ user.id } >
+                            <Link to={ `${user.id}` } key={ user.id }>
                                 <li
                                     className={ className }
-                                    key={ user.id }
                                 >
                                     { user.first_name } { user.last_name }
                                 </li>
