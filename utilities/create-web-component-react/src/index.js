@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import { createWebComponent } from '@mfdemo/create-web-component';
 

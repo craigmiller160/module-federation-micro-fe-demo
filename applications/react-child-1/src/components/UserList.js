@@ -1,4 +1,3 @@
-import React from 'react';
 import classes from './UserList.module.scss';
 import PropTypes from 'prop-types';
 import { userPropType } from '../propTypes/userPropType';
