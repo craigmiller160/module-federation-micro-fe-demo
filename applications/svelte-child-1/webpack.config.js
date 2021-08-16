@@ -8,6 +8,18 @@ const isProd = process.env.NODE_ENV === PRODUCTION_ENV;
 module.exports = merge(
     baseConfig,
     {
+        devServer: {
+            port: 3003,
+            proxy: {
+                '/globalStore': {
+                    target: 'http://localhost:3001',
+                    changeOrigin: true,
+                    pathRewrite: {
+                        '^/globalStore': ''
+                    }
+                }
+            }
+        },
         module: {
             rules: [
                 {
