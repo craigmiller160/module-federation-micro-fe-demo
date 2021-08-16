@@ -37,17 +37,27 @@
 
 <script>
     import { Link, useParams } from 'svelte-navigator';
+    import { onDestroy } from 'svelte';
 
     const params = useParams();
 
     export let users = [];
+    let oldUsers = [];
 
+    let userId = 0;
     let selectedUser = null;
-    // TODO need to unsubscribe
-    params.subscribe((paramDetails) => {
-        const userId = paramDetails.userId ? parseInt(paramDetails.userId) : 0;
-        // TODO need to re-run if users changes
+    const paramsUnsubscribe = params.subscribe((paramDetails) => {
+        userId = paramDetails.userId ? parseInt(paramDetails.userId) : 0;
+    });
+
+    $: if (users !== oldUsers) {
         selectedUser = users.find((user) => user.id === userId);
+    }
+
+    oldUsers = users;
+
+    onDestroy(() => {
+        paramsUnsubscribe();
     });
 </script>
 

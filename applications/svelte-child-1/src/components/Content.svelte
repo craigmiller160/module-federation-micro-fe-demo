@@ -31,13 +31,13 @@
     import UserList from './UserList.svelte';
     import UserDetails from './UserDetails.svelte';
     import axios from 'axios';
-    import { onMount } from 'svelte';
+    import { onDestroy, onMount } from 'svelte';
 
     let users = [];
 
     const navigate = useNavigate();
     const location = useLocation();
-    location.subscribe((locationDetails) => {
+    const locationUnsubscribe = location.subscribe((locationDetails) => {
         if (locationDetails.pathname === '/') {
             navigate('/0');
         }
@@ -49,6 +49,10 @@
                 users = res.data.data;
             })
             .catch((ex) => console.error(ex));
+    });
+
+    onDestroy(() => {
+        locationUnsubscribe();
     });
 </script>
 
