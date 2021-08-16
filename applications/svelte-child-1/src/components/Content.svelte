@@ -24,8 +24,17 @@
   }
 </style>
 
+<script>
+    import { Route } from 'svelte-navigator';
+</script>
+
 <div class="Content">
     <div class="title">
         <h1>Svelte Child 1</h1>
     </div>
+    <Route path="/:userId">
+        <div class="content">
+            <h3>Content</h3>
+        </div>
+    </Route>
 </div>

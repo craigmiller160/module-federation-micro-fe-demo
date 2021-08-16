@@ -10,7 +10,7 @@
 "@mfdemo/create-web-component-svelte@file:.yalc/@mfdemo/create-web-component-svelte":
   version "0.0.1-beta"
   dependencies:
-    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-svelte-0.0.1-beta-3c14ae86-3e2b-4cdb-b958-6c644c4df665-1629129710772/node_modules/@mfdemo/create-web-component-svelte/.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-svelte-0.0.1-beta-b2f9634f-370a-48bc-9cf0-42240ab3f6af-1629130036753/node_modules/@mfdemo/create-web-component-svelte/.yalc/@mfdemo/create-web-component"
 
 "@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-svelte/.yalc/@mfdemo/create-web-component":
   version "0.0.1-beta"
@@ -3683,6 +3683,13 @@ svelte-loader@^3.1.2:
     svelte-dev-helper "^1.1.9"
     svelte-hmr "^0.14.2"
 
+svelte-navigator@^3.1.5:
+  version "3.1.5"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/svelte-navigator/-/svelte-navigator-3.1.5.tgz#f79d78b2c2c5ad907d8b1d3748d3fbe12c32195c"
+  integrity sha512-CGTaexasSLpUaTSN2AlYqii0JeisIgg7uZbm8XCLKlpM9Qv3IltlJ7Nvh90Xw9ND97KqtGOjNJ3LNwMN1ABV0w==
+  dependencies:
+    svelte2tsx "^0.1.151"
+
 svelte-preprocess@^4.7.4:
   version "4.7.4"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/svelte-preprocess/-/svelte-preprocess-4.7.4.tgz#e4d5208ab25c2aaaf19e837f7d7bbf7930e61d2b"
@@ -3693,14 +3700,7 @@ svelte-preprocess@^4.7.4:
     detect-indent "^6.0.0"
     strip-indent "^3.0.0"
 
-svelte-routing@^1.6.0:
-  version "1.6.0"
-  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/svelte-routing/-/svelte-routing-1.6.0.tgz#cdfed6b665d4a851f3d7e532e16bfbb318ce5294"
-  integrity sha512-+DbrSGttLA6lan7oWFz1MjyGabdn3tPRqn8Osyc471ut2UgCrzM5x1qViNMc2gahOP6fKbKK1aNtZMJEQP2vHQ==
-  dependencies:
-    svelte2tsx "^0.1.157"
-
-svelte2tsx@^0.1.157:
+svelte2tsx@^0.1.151:
   version "0.1.193"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/svelte2tsx/-/svelte2tsx-0.1.193.tgz#16fe594898ef455e4f715ac317d219c9c757656b"
   integrity sha512-vzy4YQNYDnoqp2iZPnJy7kpPAY6y121L0HKrSBjU/IWW7DQ6T7RMJed2VVHFmVYm0zAGYMDl9urPc6R4DDUyhg==

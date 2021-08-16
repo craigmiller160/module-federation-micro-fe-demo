@@ -3,10 +3,9 @@ import classes from './Content.module.scss';
 import { UserList } from './UserList';
 import { UserDetails } from './UserDetails';
 import axios from 'axios';
-import { Redirect, Route, Switch, useLocation } from 'react-router';
+import { Redirect, Route, Switch } from 'react-router';
 
 export const Content = () => {
-    const location = useLocation();
     const [state, setState] = useState({
         users: []
     });
