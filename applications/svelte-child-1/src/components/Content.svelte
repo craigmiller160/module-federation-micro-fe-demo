@@ -42,7 +42,7 @@
     });
 
     onMount(() => {
-        axios.get('https://regres.in/api/users')
+        axios.get('https://reqres.in/api/users')
             .then((res) => {
                 users = res.data.data;
             })

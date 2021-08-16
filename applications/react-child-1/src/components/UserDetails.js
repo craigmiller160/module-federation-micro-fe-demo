@@ -10,6 +10,7 @@ export const UserDetails = (props) => {
         notes: ''
     });
     const selectedUser = useSelectedUser(props.users);
+    // TODO app crashes if store not available, how to fix this?
     useEffect(() => {
         return subscribe((state) => {
             const notes = state.userNotes?.[selectedUser?.id] ?? '';
