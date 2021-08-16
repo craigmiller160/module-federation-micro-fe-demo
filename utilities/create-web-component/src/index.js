@@ -1,17 +1,13 @@
 export const createWebComponent = ({
-    useShadowRoot = true,
     connectMicroFrontend,
     disconnectMicroFrontend
 }) => class extends HTMLElement {
-    shadowRoot = this.attachShadow({ mode: 'open' });
 
     connectedCallback() {
-        const root = useShadowRoot ? this.shadowRoot : this;
-        connectMicroFrontend(root);
+        connectMicroFrontend(this);
     }
 
     disconnectedCallback() {
-        const root = useShadowRoot ? this.shadowRoot : this;
-        disconnectMicroFrontend(root);
+        disconnectMicroFrontend(this);
     }
 };
