@@ -17,17 +17,6 @@ module.exports = merge(
                 }
             }
         },
-        module: {
-            rules: [
-                {
-                    test: /\.jsx?$/,
-                    exclude: /node_modules/,
-                    use: [
-                        'babel-loader'
-                    ]
-                }
-            ]
-        },
         plugins: [
             new ModuleFederationPlugin({
                 name: 'vanillaParent',
