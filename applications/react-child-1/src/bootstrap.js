@@ -1,6 +1,6 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-import { Content } from './components/Content';
+import { App } from './components/App';
 import { createWebComponentReact } from '@mfdemo/create-web-component-react';
 
-createWebComponentReact('react-child-1', Content);
+createWebComponentReact('react-child-1', App);

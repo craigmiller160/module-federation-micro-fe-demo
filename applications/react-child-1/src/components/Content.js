@@ -3,11 +3,13 @@ import classes from './Content.module.scss';
 import { UserList } from './UserList';
 import { UserDetails } from './UserDetails';
 import axios from 'axios';
+import { useLocation } from 'react-router';
 
 export const Content = () => {
+    const location = useLocation();
+    console.log(location); // TODO delete this
     const [state, setState] = useState({
-        users: [],
-        selectedUser: null
+        users: []
     });
 
     useEffect(() => {
@@ -21,11 +23,6 @@ export const Content = () => {
         request();
     }, []);
 
-    const selectUser = (selectedUser) => setState((prevState) => ({
-        ...prevState,
-        selectedUser
-    }));
-
     return (
         <div className={ classes.Content }>
             <div className={ classes.title }>
@@ -34,11 +31,9 @@ export const Content = () => {
             <div className={ classes.content }>
                 <UserList
                     users={ state.users }
-                    selectUser={ selectUser }
-                    selectedUser={ state.selectedUser }
                 />
                 <UserDetails
-                    selectedUser={ state.selectedUser }
+                    users={ state.users }
                 />
             </div>
         </div>

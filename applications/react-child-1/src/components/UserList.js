@@ -1,6 +1,7 @@
 import classes from './UserList.module.scss';
 import PropTypes from 'prop-types';
 import { userPropType } from '../propTypes/userPropType';
+import { Link } from 'react-router-dom';
 
 export const UserList = (props) => {
     return (
@@ -10,13 +11,14 @@ export const UserList = (props) => {
                     props.users.map((user) => {
                         const className = user.id === props.selectedUser?.id ? classes.active : null;
                         return (
-                            <li
-                                className={ className }
-                                key={ user.id }
-                                onClick={ () => props.selectUser(user) }
-                            >
-                                { user.first_name } { user.last_name }
-                            </li>
+                            <Link to={ user.id } >
+                                <li
+                                    className={ className }
+                                    key={ user.id }
+                                >
+                                    { user.first_name } { user.last_name }
+                                </li>
+                            </Link>
                         );
                     })
                 }
@@ -25,7 +27,5 @@ export const UserList = (props) => {
     );
 };
 UserList.propTypes = {
-    users: PropTypes.arrayOf(userPropType).isRequired,
-    selectUser: PropTypes.func.isRequired,
-    selectedUser: userPropType
+    users: PropTypes.arrayOf(userPropType).isRequired
 };
