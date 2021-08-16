@@ -18,15 +18,20 @@
 
 <script>
     import { createGetSelectedUser } from './createGetSelectedUser';
-    import { subscribe, updateState } from 'globalStore';
-    import { afterUpdate, beforeUpdate, onDestroy, onMount } from 'svelte';
+    import { subscribe, updateState, getState } from 'globalStore';
+    import { afterUpdate, onDestroy } from 'svelte';
 
     export let users = [];
 
     const getSelectedUser = createGetSelectedUser();
     $: selectedUser = getSelectedUser(users);
-
     let notes = '';
+
+    let oldSelectedUser = null;
+    $: if (oldSelectedUser !== selectedUser) {
+        notes = getState().userNotes?.[selectedUser?.id] ?? '';
+        oldSelectedUser = selectedUser;
+    }
 
     const storeUnsubscribe = subscribe((state) => {
         notes = state.userNotes?.[selectedUser?.id] ?? '';
