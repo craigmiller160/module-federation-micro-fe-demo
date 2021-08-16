@@ -3,12 +3,10 @@ import { userPropType } from '../propTypes/userPropType';
 import PropTypes from 'prop-types';
 import { useRouteMatch } from 'react-router';
 import { useMemo } from 'react';
+import { useSelectedUser } from './useSelectedUser';
 
 export const UserDetails = (props) => {
-    const match = useRouteMatch();
-    const selectedUser = useMemo(() =>
-            props.users.find((user) => user.id === parseInt(match.params.userId)),
-        [match.params.userId, props.users]);
+    const selectedUser = useSelectedUser(props.users);
 
     return (
         <div className={ classes.UserDetails }>

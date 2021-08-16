@@ -7,7 +7,6 @@ import { Route, useLocation } from 'react-router';
 
 export const Content = () => {
     const location = useLocation();
-    console.log(location); // TODO delete this
     const [state, setState] = useState({
         users: []
     });
@@ -28,19 +27,19 @@ export const Content = () => {
             <div className={ classes.title }>
                 <h1>React Child 1</h1>
             </div>
-            <div className={ classes.content }>
-                <UserList
-                    users={ state.users }
-                />
-                <Route
-                    path="/:userId"
-                    render={ () => (
+            <Route
+                path="/:userId"
+                render={ () => (
+                    <div className={ classes.content }>
+                        <UserList
+                            users={ state.users }
+                        />
                         <UserDetails
                             users={ state.users }
                         />
-                    ) }
-                />
-            </div>
+                    </div>
+                ) }
+            />
         </div>
     );
 };
