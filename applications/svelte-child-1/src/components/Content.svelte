@@ -26,6 +26,12 @@
 
 <script>
     import { Route, useLocation, useNavigate } from 'svelte-navigator/src/index';
+    import UserList from './UserList.svelte';
+    import UserDetails from './UserDetails.svelte';
+    import axios from 'axios';
+    import { onMount } from 'svelte';
+
+    let users = [];
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -33,6 +39,14 @@
         if (locationDetails.pathname === '/') {
             navigate('/0');
         }
+    });
+
+    onMount(() => {
+        axios.get('https://regres.in/api/users')
+            .then((res) => {
+                users = res.data.data;
+            })
+            .catch((ex) => console.error(ex));
     });
 </script>
 
@@ -42,7 +56,8 @@
     </div>
     <Route path="/:userId">
         <div class="content">
-            <h3>Content</h3>
+            <UserList users={ users } />
+            <UserDetails users={ users } />
         </div>
     </Route>
 </div>

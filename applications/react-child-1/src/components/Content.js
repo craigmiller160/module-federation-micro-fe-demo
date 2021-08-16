@@ -11,14 +11,12 @@ export const Content = () => {
     });
 
     useEffect(() => {
-        const request = async () => {
-            const res = await axios.get('https://reqres.in/api/users');
-            setState((prevState) => ({
+        axios.get('https://reqres.in/api/users')
+            .then((res) => setState((prevState) => ({
                 ...prevState,
                 users: res.data.data
-            }));
-        };
-        request();
+            })))
+            .catch((ex) => console.error(ex));
     }, []);
 
     return (
