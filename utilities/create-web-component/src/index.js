@@ -2,12 +2,13 @@ export const createWebComponent = ({
     connectComponent,
     disconnectComponent
 }) => class extends HTMLElement {
+    connectResult = null;
 
     connectedCallback() {
-        connectComponent(this);
+        this.connectResult = connectComponent(this);
     }
 
     disconnectedCallback() {
-        disconnectComponent(this);
+        disconnectComponent(this, this.connectResult);
     }
 };
