@@ -14,6 +14,13 @@ module.exports = merge(
                     pathRewrite: {
                         '^/reactChild1': ''
                     }
+                },
+                '/globalStore': {
+                    target: 'http://localhost:3001',
+                    changeOrigin: true,
+                    pathRewrite: {
+                        '^/globalStore': ''
+                    }
                 }
             }
         },
