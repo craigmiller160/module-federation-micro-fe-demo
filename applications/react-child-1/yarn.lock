@@ -928,7 +928,7 @@
 "@mfdemo/create-web-component-react@file:.yalc/@mfdemo/create-web-component-react":
   version "0.0.1-beta"
   dependencies:
-    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-react-0.0.1-beta-fdc2f632-5c9e-4068-bcf9-d5c6609f6bca-1629119434216/node_modules/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-react-0.0.1-beta-4d7a8137-4037-48b0-8fa6-a5d0abf3d91b-1629119777389/node_modules/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component"
 
 "@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component":
   version "0.0.1-beta"
@@ -943,6 +943,7 @@
     mini-css-extract-plugin "^2.2.0"
     sass "^1.37.5"
     sass-loader "^12.1.0"
+    style-loader "^3.2.1"
     terser-webpack-plugin "^5.1.4"
     webpack "^5.50.0"
     webpack-cli "^4.7.2"
@@ -4759,6 +4760,11 @@ strip-final-newline@^2.0.0:
   version "2.0.0"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/strip-final-newline/-/strip-final-newline-2.0.0.tgz#89b852fb2fcbe936f6f4b3187afb0a12c1ab58ad"
   integrity sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==
+
+style-loader@^3.2.1:
+  version "3.2.1"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/style-loader/-/style-loader-3.2.1.tgz#63cb920ec145c8669e9a50e92961452a1ef5dcde"
+  integrity sha512-1k9ZosJCRFaRbY6hH49JFlRB0fVSbmnyq1iTPjNxUmGVjBNEmwrrHPenhlp+Lgo51BojHSf6pl2FcqYaN3PfVg==
 
 stylehacks@^5.0.1:
   version "5.0.1"

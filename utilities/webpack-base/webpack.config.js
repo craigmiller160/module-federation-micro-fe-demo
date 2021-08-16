@@ -44,7 +44,7 @@ module.exports = {
                 test: /\.css$/,
                 exclude: /\.module\.css$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    process.env.NODE_ENV === PRODUCTION_ENV ? MiniCssExtractPlugin.loader : 'style-loader',
                     'css-loader'
                 ],
                 sideEffects: true
@@ -52,7 +52,7 @@ module.exports = {
             {
                 test: /\.module\.css$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    process.env.NODE_ENV === PRODUCTION_ENV ? MiniCssExtractPlugin.loader : 'style-loader',
                     {
                         loader: 'css-loader',
                         options: {
@@ -65,7 +65,7 @@ module.exports = {
                 test: /\.scss$/,
                 exclude: /\.module\.scss$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    process.env.NODE_ENV === PRODUCTION_ENV ? MiniCssExtractPlugin.loader : 'style-loader',
                     'css-loader',
                     {
                         loader: 'sass-loader',
@@ -79,7 +79,7 @@ module.exports = {
             {
                 test: /\.module\.scss$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    process.env.NODE_ENV === PRODUCTION_ENV ? MiniCssExtractPlugin.loader : 'style-loader',
                     {
                         loader: 'css-loader',
                         options: {
