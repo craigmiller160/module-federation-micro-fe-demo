@@ -1,8 +1,12 @@
 {
   "name": "@mfdemo/create-web-component-svelte",
   "version": "0.0.1-beta",
-  "main": "index.js",
   "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    ".yalc"
+  ],
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib"
   },
