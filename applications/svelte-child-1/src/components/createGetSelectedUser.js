@@ -13,6 +13,9 @@ export const createGetSelectedUser = () => {
     });
 
     return (users) => {
+        if (userId === 0) {
+            return null;
+        }
         return users.find((user) => user.id === userId);
     };
 }
