@@ -37,15 +37,13 @@
 
     const navigate = useNavigate();
     const location = useLocation();
-    let locationUnsubscribe;
+    const locationUnsubscribe = location.subscribe((locationDetails) => {
+        if (locationDetails.pathname === '/') {
+            navigate('/0');
+        }
+    });
 
     onMount(() => {
-        locationUnsubscribe = location.subscribe((locationDetails) => {
-            if (locationDetails.pathname === '/') {
-                navigate('/0');
-            }
-        });
-
         axios.get('https://reqres.in/api/users')
             .then((res) => {
                 users = res.data.data;
@@ -54,9 +52,7 @@
     });
 
     onDestroy(() => {
-        if (locationUnsubscribe) {
-            locationUnsubscribe();
-        }
+        locationUnsubscribe();
     });
 </script>
 
