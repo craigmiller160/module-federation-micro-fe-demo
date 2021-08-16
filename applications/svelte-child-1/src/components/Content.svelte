@@ -25,7 +25,15 @@
 </style>
 
 <script>
-    import { Route } from 'svelte-navigator';
+    import { Route, useLocation, useMatch, useNavigate, useParams } from 'svelte-navigator/src/index';
+
+    const navigate = useNavigate();
+    const location = useLocation();
+    location.subscribe((locationDetails) => {
+        if (locationDetails.pathname === '/') {
+            navigate('/0');
+        }
+    });
 </script>
 
 <div class="Content">
