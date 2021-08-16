@@ -25,7 +25,7 @@
 </style>
 
 <script>
-    import { Route, useLocation, useMatch, useNavigate, useParams } from 'svelte-navigator/src/index';
+    import { Route, useLocation, useNavigate } from 'svelte-navigator/src/index';
 
     const navigate = useNavigate();
     const location = useLocation();
