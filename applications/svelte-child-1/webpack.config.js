@@ -50,6 +50,9 @@ module.exports = merge(
                 filename: 'remoteEntry.js',
                 remotes: {
                     globalStore: 'globalStore@/globalStore/remoteEntry.js'
+                },
+                exposes: {
+                    '.': './src/index.js'
                 }
             })
         ]
