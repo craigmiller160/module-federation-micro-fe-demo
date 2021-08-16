@@ -1,6 +1,7 @@
 const baseConfig = require('@mfdemo/webpack-base/webpack.config');
 const { merge } = require('webpack-merge');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
+const preprocess = require('svelte-preprocess');
 
 const PRODUCTION_ENV = 'production';
 const isProd = process.env.NODE_ENV === PRODUCTION_ENV;
@@ -31,7 +32,8 @@ module.exports = merge(
                                 dev: !isProd
                             },
                             emitCss: isProd,
-                            hotReload: !isProd
+                            hotReload: !isProd,
+                            preprocess: preprocess()
                         }
                     }
                 }

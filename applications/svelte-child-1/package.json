@@ -11,7 +11,8 @@
     "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base",
     "cross-env": "^7.0.3",
     "svelte": "^3.42.1",
-    "svelte-loader": "^3.1.2"
+    "svelte-loader": "^3.1.2",
+    "svelte-preprocess": "^4.7.4"
   },
   "dependencies": {
     "@mfdemo/create-web-component-svelte": "file:.yalc/@mfdemo/create-web-component-svelte",
