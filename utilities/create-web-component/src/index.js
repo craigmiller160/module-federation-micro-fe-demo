@@ -1,13 +1,13 @@
 export const createWebComponent = ({
-    connectMicroFrontend,
-    disconnectMicroFrontend
+    connectComponent,
+    disconnectComponent
 }) => class extends HTMLElement {
 
     connectedCallback() {
-        connectMicroFrontend(this);
+        connectComponent(this);
     }
 
     disconnectedCallback() {
-        disconnectMicroFrontend(this);
+        disconnectComponent(this);
     }
 };

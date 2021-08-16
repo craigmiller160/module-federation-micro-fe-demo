@@ -5,5 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "@mfdemo/create-web-component": "file:.yalc/@mfdemo/create-web-component"
+  },
+  "devDependencies": {
+    "svelte": "^3.42.1"
   }
 }
