@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@mfdemo/create-web-component-react": "file:.yalc/@mfdemo/create-web-component-react",
+    "axios": "^0.21.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
