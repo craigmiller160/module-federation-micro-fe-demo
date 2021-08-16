@@ -15,6 +15,7 @@ export const updateState = (updateFn) => {
 export const subscribe = (subscription) => {
     const subscriptionKey = nanoid();
     subscriptions[subscriptionKey] = subscription;
+    subscription(state);
     return () => {
         delete subscriptions[subscriptionKey];
     };
