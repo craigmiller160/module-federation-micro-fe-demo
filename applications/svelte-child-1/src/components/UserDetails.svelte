@@ -28,12 +28,12 @@
 
     let notes = '';
 
-    beforeUpdate(() => {
-        console.log('AfterUpdate', selectedUser?.id); // TODO delete this
-        subscribe((state) => {
-            console.log('Subscribing', state.userNotes); // TODO delete this
-            notes = state.userNotes?.[selectedUser?.id] ?? '';
-        })();
+    const storeUnsubscribe = subscribe((state) => {
+        notes = state.userNotes?.[selectedUser?.id] ?? '';
+    });
+
+    onDestroy(() => {
+        storeUnsubscribe();
     });
 
     const updateNotes = (text) => updateState((draft) => {

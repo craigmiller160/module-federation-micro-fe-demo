@@ -5,9 +5,7 @@ export const createGetSelectedUser = () => {
     const params = useParams();
     let userId = 0;
 
-    let paramsUnsubscribe;
-
-    paramsUnsubscribe = params.subscribe((paramDetails) => {
+    const paramsUnsubscribe = params.subscribe((paramDetails) => {
         userId = paramDetails.userId ? parseInt(paramDetails.userId) : 0;
     });
 
