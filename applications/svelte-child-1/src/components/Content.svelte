@@ -1,10 +1,12 @@
 <style lang="scss">
+  @import "src/styles/common";
+
   .Content {
     display: flex;
     flex-direction: column;
-    background-color: lightgreen;
-    border: 3px solid darkgreen;
-    border-radius: 5px;
+    background-color: $color-secondary;
+
+    @include border-heavy;
 
     .title {
       display: flex;

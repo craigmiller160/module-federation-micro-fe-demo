@@ -1,4 +1,6 @@
 <style lang="scss">
+  @import "src/styles/common";
+
   .UserList {
     margin: 1rem;
 
@@ -13,19 +15,19 @@
       }
 
       :global(li) {
-        font-size: 1.5rem;
-        border: 1px solid darkgreen;
+        font-size: $text-size-content;
         padding: 1rem;
-        border-radius: 5px;
         cursor: pointer;
 
+        @include border-light;
+
         &:hover {
-          background-color: darkgreen;
+          background-color: $color-primary;
           color: white;
         }
 
         &.active {
-          background-color: darkgreen;
+          background-color: $color-primary;
           color: white;
         }
       }

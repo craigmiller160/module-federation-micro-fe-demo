@@ -1,10 +1,12 @@
 <style lang="scss">
+  @import "src/styles/common";
+
   .UserDetails {
     margin: 1rem;
     padding: 2rem;
-    border: 1px solid darkgreen;
-    border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: $text-size-content;
+
+    @include border-light;
 
     :global(textarea) {
       width: 100%;
