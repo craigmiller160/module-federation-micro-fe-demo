@@ -12,7 +12,7 @@ export const UserDetails = (props) => {
     const selectedUser = useSelectedUser(props.users);
     useEffect(() => {
         return subscribe((state) => {
-            const notes = state.userNotes?.[selectedUser?.id];
+            const notes = state.userNotes?.[selectedUser?.id] ?? '';
             setState((prevState) => ({
                 ...prevState,
                 notes
@@ -23,6 +23,7 @@ export const UserDetails = (props) => {
     const updateNotes = (text) => updateState((draft) => {
         const userNotes = draft.userNotes ?? {};
         userNotes[selectedUser.id] = text;
+        draft.userNotes = userNotes;
     });
 
     return (
