@@ -33,6 +33,9 @@ module.exports = merge(
                             },
                             emitCss: isProd,
                             hotReload: !isProd,
+                            hotOptions: {
+                                preserveLocalState: true
+                            },
                             preprocess: preprocess({
                                 sourceMap: !isProd
                             })
