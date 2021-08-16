@@ -3,10 +3,15 @@
   "version": "0.0.1-beta",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "rm -rf lib && babel src --out-dir lib"
+  },
   "dependencies": {
     "@mfdemo/create-web-component": "file:.yalc/@mfdemo/create-web-component"
   },
   "devDependencies": {
-    "svelte": "^3.42.1"
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0"
   }
 }
