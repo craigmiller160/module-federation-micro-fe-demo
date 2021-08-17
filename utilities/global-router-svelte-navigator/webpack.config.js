@@ -11,7 +11,8 @@ module.exports = merge(
             vendor: ['svelte', 'svelte-navigator']
         },
         output: {
-            filename: 'assets/js/[name].js'
+            path: path.join(__dirname, 'lib'),
+            filename: '[name].js'
         },
         module: {
             rules: [

@@ -1,7 +1,11 @@
 {
   "name": "@mfdemo/global-router-svelte-navigator",
   "version": "0.0.1-beta",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    ".yalc",
+    "lib"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack"
