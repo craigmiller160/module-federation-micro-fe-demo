@@ -7,8 +7,11 @@ module.exports = merge(
     baseConfig,
     {
         entry: {
-            index: path.join(__dirname, 'src', 'index.js'),
+            main: path.join(__dirname, 'src', 'index.js'),
             vendor: ['svelte', 'svelte-navigator']
+        },
+        output: {
+            filename: 'assets/js/[name].js'
         },
         module: {
             rules: [
