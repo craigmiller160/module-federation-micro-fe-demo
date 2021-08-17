@@ -38,7 +38,6 @@
     const navigate = useNavigate();
     const location = useLocation();
     const locationUnsubscribe = location.subscribe((locationDetails) => {
-        console.log('Location', locationDetails.pathname); // TODO delete this
         if (locationDetails.pathname === '/') {
             navigate('/0');
         }
