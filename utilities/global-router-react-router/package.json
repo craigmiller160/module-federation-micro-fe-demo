@@ -1,0 +1,9 @@
+{
+  "name": "@mfdemo/global-router-react-router",
+  "version": "0.0.1-beta",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    ".yalc"
+  ]
+}
