@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import UserDetails from '../components/UserDetails';
+import UserWrapper from '../components/UserWrapper';
 
 export default createRouter({
     history: createWebHistory(),
     routes: [
         {
             path: '/:userId',
-            name: 'UserDetails',
-            component: UserDetails
+            name: 'UserWrapper',
+            component: UserWrapper
         },
         {
             path: '/',

@@ -28,11 +28,5 @@ export default {
         text-align: center;
       }
     }
-
-    .content {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
   }
 </style>
