@@ -100,7 +100,7 @@ const baseConfig = {
         ]
     },
     devServer: {
-        contentBase: path.join(process.cwd(), 'src'),
+        // contentBase: path.join(process.cwd(), 'src'),
         hot: true,
         historyApiFallback: {
             index: '/'
@@ -111,7 +111,10 @@ const baseConfig = {
 const htmlConfig = {
     plugins: [
         new HtmlWebpackPlugin({
-            template: indexHtmlPath
+            template: indexHtmlPath,
+            chunks: [
+                'main' // TODO big concerns about this and dependency sharing, if the remoteEntry.js isn't being outputted in the index.html
+            ]
         })
     ]
 };
