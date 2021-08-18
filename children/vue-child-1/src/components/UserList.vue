@@ -11,16 +11,14 @@
 </template>
 
 <script>
-import { useRoute } from 'vue-router';
-import { computed } from 'vue';
+import { useSelectedUser } from './useSelectedUser';
 
 export default {
   props: [
       'users'
   ],
   setup(props) {
-    const route = useRoute();
-    const selectedUser = computed(() => props.users.find((user) => user.id === parseInt(route.params.userId)));
+    const selectedUser = useSelectedUser(props.users);
 
     const getLiClassName = (user) => {
       if (selectedUser?.value?.id === user.id) {
