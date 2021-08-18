@@ -15,6 +15,8 @@
   },
   "dependencies": {
     "@mfdemo/create-web-component-vue": "file:.yalc/@mfdemo/create-web-component-vue",
+    "core-js": "^3.16.2",
+    "regenerator-runtime": "^0.13.9",
     "vue": "^3.1.5",
     "vue-router": "^4"
   }
