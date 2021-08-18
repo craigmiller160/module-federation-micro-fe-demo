@@ -27,7 +27,7 @@
 </style>
 
 <script>
-    import { Route, useLocation, useNavigate } from 'svelte-navigator/src/index';
+    import { Route, useLocation, useNavigate } from 'svelte-navigator';
     import UserList from './UserList.svelte';
     import UserDetails from './UserDetails.svelte';
     import axios from 'axios';

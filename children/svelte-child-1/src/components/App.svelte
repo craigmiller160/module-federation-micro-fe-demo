@@ -1,5 +1,5 @@
 <script>
-    import { Router } from 'svelte-navigator/src/index';
+    import { Router } from 'svelte-navigator';
     import Content from './Content.svelte';
 </script>
 
