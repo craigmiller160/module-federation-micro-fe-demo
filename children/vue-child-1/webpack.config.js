@@ -6,6 +6,11 @@ const { VueLoaderPlugin } = require('vue-loader');
 module.exports = merge(
     baseConfig,
     {
+        resolve: {
+            extensions: [
+                '.js', '.vue', '.json'
+            ]
+        },
         devServer: {
             port: 3004,
             proxy: {
