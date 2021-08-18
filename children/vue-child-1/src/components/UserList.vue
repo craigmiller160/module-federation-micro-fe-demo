@@ -2,7 +2,7 @@
   <div class="UserList">
     <ul>
       <router-link v-for="user in users" :to="`/${user.id}`">
-        <li>
+        <li :class="getLiClassName(user)">
           {{ user.first_name }} {{ user.last_name }}
         </li>
       </router-link>
@@ -11,12 +11,28 @@
 </template>
 
 <script>
+import { useRoute } from 'vue-router';
+import { computed } from 'vue';
+
 export default {
   props: [
       'users'
   ],
   setup(props) {
+    const route = useRoute();
+    const selectedUser = computed(() => props.users.find((user) => user.id === parseInt(route.params.userId)));
 
+    const getLiClassName = (user) => {
+      if (selectedUser?.value?.id === user.id) {
+        return 'active';
+      }
+      return '';
+    }
+
+    return {
+      selectedUser,
+      getLiClassName
+    }
   }
 }
 </script>
