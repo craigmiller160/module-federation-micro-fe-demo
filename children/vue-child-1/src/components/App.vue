@@ -1,10 +1,12 @@
 <template>
-  <h1>Hello World</h1>
+  <Content />
 </template>
 
 <script>
+import Content from './Content';
 export default {
-  name: "App"
+  name: "App",
+  components: { Content }
 }
 </script>
 
