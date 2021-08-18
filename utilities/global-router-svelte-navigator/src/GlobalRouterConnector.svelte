@@ -1,6 +1,4 @@
 <script>
-    // TODO need to avoid bundling svelte-navigator
-
     import { useLocation, useNavigate } from 'svelte-navigator';
     import { onDestroy } from 'svelte';
 

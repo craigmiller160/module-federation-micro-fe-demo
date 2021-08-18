@@ -1,1 +1,5 @@
-export * from './GlobalRouterConnector.svelte';
+import GlobalRouterConnector from './GlobalRouterConnector.svelte';
+
+export {
+    GlobalRouterConnector
+}
