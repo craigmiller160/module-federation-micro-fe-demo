@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@mfdemo/create-web-component-svelte": "file:.yalc/@mfdemo/create-web-component-svelte",
+    "@mfdemo/global-router-svelte-navigator": "file:.yalc/@mfdemo/global-router-svelte-navigator",
     "axios": "^0.21.1",
     "core-js": "^3.16.1",
     "regenerator-runtime": "^0.13.9",
