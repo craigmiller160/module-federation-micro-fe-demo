@@ -1,7 +1,7 @@
 <template>
   <div class="UserWrapper">
-    <UserList />
-    <UserDetails />
+    <UserList :users="users" />
+    <UserDetails :users="users" />
   </div>
 </template>
 
@@ -15,7 +15,9 @@ export default {
       'users'
   ],
   setup(props) {
-
+    return {
+      users: props.users
+    }
   }
 }
 </script>

@@ -4,7 +4,12 @@
 
 <script>
 export default {
-  name: "UserDetails"
+  props: [
+      'users'
+  ],
+  setup(props) {
+
+  }
 }
 </script>
 
