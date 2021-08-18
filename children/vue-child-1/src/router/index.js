@@ -1,12 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import UserDetails from '../components/UserDetails';
 
 export default createRouter({
     history: createWebHistory(),
     routes: [
-        // {
-        //     path: '/page/:number',
-        //     name: 'Page',
-        //     component: Page
-        // }
+        {
+            path: '/:userId',
+            name: 'UserDetails',
+            component: UserDetails
+        },
+        {
+            path: '/',
+            redirect: '/0'
+        }
     ]
 });
