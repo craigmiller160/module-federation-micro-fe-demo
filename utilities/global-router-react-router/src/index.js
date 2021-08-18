@@ -38,4 +38,8 @@ export const GlobalRouterConnector = () => {
             window.removeEventListener(EVENT_NAME, globalRouterListener, true);
         };
     }, []);
+
+    return (
+        <span />
+    );
 };
