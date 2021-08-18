@@ -17,10 +17,10 @@ module.exports = merge(
                 'svelte', 'browser', 'module', 'main'
             ]
         },
-        entry: {
-            main: path.join(__dirname, 'src', 'index.js'),
-            vendor: ['svelte', 'svelte-navigator']
-        },
+        // entry: {
+        //     main: path.join(__dirname, 'src', 'index.js'),
+        //     vendor: ['svelte', 'svelte-navigator']
+        // },
         output: {
             path: path.join(__dirname, 'lib'),
             filename: '[name].js'
