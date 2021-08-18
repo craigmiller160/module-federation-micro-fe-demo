@@ -6,6 +6,17 @@ const path = require('path');
 module.exports = merge(
     baseConfig,
     {
+        resolve: {
+            alias: {
+                svelte: path.join(__dirname, 'node_modules', 'svelte')
+            },
+            extensions: [
+                '.mjs', '.js', '.svelte'
+            ],
+            mainFields: [
+                'svelte', 'browser', 'module', 'main'
+            ]
+        },
         entry: {
             main: path.join(__dirname, 'src', 'index.js'),
             vendor: ['svelte', 'svelte-navigator']
