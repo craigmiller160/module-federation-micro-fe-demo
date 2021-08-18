@@ -2,6 +2,7 @@
   "name": "@mfdemo/global-router-svelte-navigator",
   "version": "0.0.1-beta",
   "main": "lib/index.js",
+  "svelte": "src/index.js",
   "files": [
     ".yalc",
     "lib"
