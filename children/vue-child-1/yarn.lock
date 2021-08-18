@@ -25,6 +25,14 @@
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@discoveryjs/json-ext/-/json-ext-0.5.3.tgz#90420f9f9c6d3987f176a19a7d8e764271a2f55d"
   integrity sha512-Fxt+AfXgjMoin2maPIYzFZnQjAXjAL0PHscM5pRTtatFqB+vZxAM9tLp2Optnuw3QOQC40jTNeGYFOMvyf7v9g==
 
+"@mfdemo/create-web-component-vue@file:.yalc/@mfdemo/create-web-component-vue":
+  version "0.0.1-beta"
+  dependencies:
+    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-vue-0.0.1-beta-30b0dff3-f970-4bb0-baaa-20bc993627b1-1629319518109/node_modules/@mfdemo/create-web-component-vue/.yalc/@mfdemo/create-web-component"
+
+"@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-vue/.yalc/@mfdemo/create-web-component":
+  version "0.0.1-beta"
+
 "@mfdemo/webpack-base@file:.yalc/@mfdemo/webpack-base":
   version "0.0.1-beta"
   dependencies:
