@@ -6,6 +6,7 @@ import { useSelectedUser } from './useSelectedUser';
 
 export const UserList = (props) => {
     const selectedUser = useSelectedUser(props.users);
+    // TODO this can be done with useRouteMatch('/:userId');
     return (
         <div className={ classes.UserList }>
             <ul>
