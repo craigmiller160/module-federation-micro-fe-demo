@@ -3,8 +3,14 @@
   "version": "0.0.1-beta",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
   "devDependencies": {
-    "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base"
+    "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base",
+    "cross-env": "^7.0.3",
+    "vue-loader": "^15.9.8"
   },
   "dependencies": {
     "vue": "^3.1.5",
