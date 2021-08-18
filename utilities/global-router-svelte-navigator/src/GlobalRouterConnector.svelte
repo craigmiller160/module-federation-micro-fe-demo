@@ -36,6 +36,7 @@
 
     onDestroy(() => {
         locationUnsubscribe();
+        window.removeEventListener(EVENT_NAME, globalRouterListener, true);
     });
 
 </script>
