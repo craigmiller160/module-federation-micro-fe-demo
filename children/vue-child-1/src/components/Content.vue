@@ -1,13 +1,29 @@
 <template>
   <div class="Content">
     <h1>Vue Child 1</h1>
-    <router-view />
+    <router-view :users="users" />
   </div>
 </template>
 
 <script>
+import { onMounted, ref } from 'vue';
+import axios from 'axios';
+
 export default {
-  name: "Content"
+  name: "Content",
+  setup() {
+    const users = ref([]);
+
+    onMounted(() => {
+      axios.get('https://reqres.in/api/users')
+          .then((res) => users.value = res.data.data)
+          .catch((ex) => console.error(ex));
+    });
+
+    return {
+      users
+    };
+  }
 }
 </script>
 

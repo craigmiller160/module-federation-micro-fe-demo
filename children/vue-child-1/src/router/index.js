@@ -7,7 +7,8 @@ export default createRouter({
         {
             path: '/:userId',
             name: 'UserWrapper',
-            component: UserWrapper
+            component: UserWrapper,
+            props: true
         },
         {
             path: '/',

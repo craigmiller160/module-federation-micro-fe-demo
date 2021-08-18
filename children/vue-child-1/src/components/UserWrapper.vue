@@ -10,7 +10,13 @@ import UserList from './UserList';
 import UserDetails from './UserDetails';
 export default {
   name: "UserWrapper",
-  components: { UserDetails, UserList }
+  components: { UserDetails, UserList },
+  props: [
+      'users'
+  ],
+  setup(props) {
+
+  }
 }
 </script>
 
