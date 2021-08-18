@@ -2,5 +2,12 @@
   "name": "@mfdemo/vue-child-1",
   "version": "0.0.1-beta",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base"
+  },
+  "dependencies": {
+    "vue": "^3.1.5",
+    "vue-router": "^4"
+  }
 }
