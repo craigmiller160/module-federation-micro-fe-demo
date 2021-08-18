@@ -15,9 +15,7 @@ export default {
       'users'
   ],
   setup(props) {
-    return {
-      users: props.users
-    }
+
   }
 }
 </script>
