@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@mfdemo/create-web-component-react": "file:.yalc/@mfdemo/create-web-component-react",
+    "@mfdemo/global-router-react-router": "file:.yalc/@mfdemo/global-router-react-router",
     "axios": "^0.21.1",
     "core-js": "^3.16.1",
     "prop-types": "^15.7.2",
