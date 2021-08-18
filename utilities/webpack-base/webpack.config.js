@@ -12,6 +12,8 @@ const PRODUCTION_ENV = 'production';
 const indexHtmlPath = path.join(process.cwd(), 'src', 'index.html');
 const indexHtmlExists = fs.existsSync(indexHtmlPath);
 
+// TODO need a leading / before assets, but that'll break micro-frontend loading. probably need to figure out public path to make that work.
+
 const baseConfig = {
     mode: process.env.NODE_ENV,
     entry: path.join(process.cwd(), 'src', 'index.js'),
