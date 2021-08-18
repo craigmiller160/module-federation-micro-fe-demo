@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base",
+    "@vue/compiler-sfc": "^3.2.4",
     "cross-env": "^7.0.3",
     "vue-loader": "^16.5.0"
   },
