@@ -3,15 +3,15 @@ import { userPropType } from '../propTypes/userPropType';
 import PropTypes from 'prop-types';
 import { useSelectedUser } from './useSelectedUser';
 import { useEffect, useState } from 'react';
-import { subscribe, updateState } from 'globalStore';
+import { subscribe, updateState } from 'globalStore'; // TODO refactor to be functional
 
 export const UserDetails = (props) => {
     const [state, setState] = useState({
         notes: ''
     });
     const selectedUser = useSelectedUser(props.users);
-    // TODO app crashes if store not available, how to fix this?
     useEffect(() => {
+        // TODO am I subscribing multiple times?
         return subscribe((state) => {
             const notes = state.userNotes?.[selectedUser?.id] ?? '';
             setState((prevState) => ({

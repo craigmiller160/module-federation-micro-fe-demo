@@ -18,7 +18,7 @@
 
 <script>
     import { createGetSelectedUser } from './createGetSelectedUser';
-    import { subscribe, updateState, getState } from 'globalStore';
+    import { subscribe, updateState, getState } from 'globalStore'; // TODO refactor to be functional
     import { afterUpdate, onDestroy } from 'svelte';
 
     export let users = [];

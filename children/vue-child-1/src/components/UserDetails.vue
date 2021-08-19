@@ -19,6 +19,7 @@
 <script>
 import { useSelectedUser } from './useSelectedUser';
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue';
+// Functional import is not a nice-to-have here, it's required in Vue for some reason
 const { subscribe, updateState, getState } = await import('globalStore').catch((ex) => alert(ex.message));
 
 export default {
