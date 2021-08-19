@@ -113,11 +113,7 @@ const baseConfig = {
 const htmlConfig = {
     plugins: [
         new HtmlWebpackPlugin({
-            template: indexHtmlPath,
-            // TODO see if this goes away if the extra rules for svelte's recommended webpack config are setup
-            chunks: [
-                'main' // TODO big concerns about this and dependency sharing, if the remoteEntry.js isn't being outputted in the index.html
-            ]
+            template: indexHtmlPath
         })
     ]
 };
