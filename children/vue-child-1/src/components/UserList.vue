@@ -13,14 +13,16 @@
 <script>
 import { useSelectedUser } from './useSelectedUser';
 import { useRoute } from 'vue-router';
-import { onUpdated, watch } from 'vue';
+import { computed, onUpdated, watch } from 'vue';
 
 export default {
   props: [
       'users'
   ],
   setup(props) {
-    const selectedUser = useSelectedUser(props.users);
+    const selectedUser = useSelectedUser(
+        computed(() => props.users)
+    );
 
     const getLiClassName = (user) => {
       if (selectedUser?.value?.id === user.id) {

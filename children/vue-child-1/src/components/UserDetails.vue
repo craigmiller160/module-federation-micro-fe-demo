@@ -18,7 +18,7 @@
 
 <script>
 import { useSelectedUser } from './useSelectedUser';
-import { onMounted, onUnmounted, ref } from 'vue';
+import { computed, onMounted, onUnmounted, ref } from 'vue';
 const globalStorePromise = import('globalStore');
 
 // TODO import() is great for resiliency, but figure out an alternative
@@ -28,7 +28,9 @@ export default {
       'users'
   ],
   setup(props) {
-    const selectedUser = useSelectedUser(props.users);
+    const selectedUser = useSelectedUser(
+        computed(() => props.users)
+    );
     const notes = ref('');
 
     let storeUnsubscribe;
