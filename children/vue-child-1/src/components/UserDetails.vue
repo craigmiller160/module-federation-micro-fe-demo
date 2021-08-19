@@ -1,9 +1,18 @@
 <template>
   <div class="UserDetails">
+    <img v-if="!!selectedUser" :src="selectedUser?.avatar" alt="avatar" />
     <p>
       <strong>Name: </strong>
-      {{ selectedUser.first_name }} {{ selectedUser.last_name }}
+      {{ selectedUser?.first_name }} {{ selectedUser?.last_name }}
     </p>
+    <p>
+      <strong>Email: </strong>
+      {{ selectedUser?.email }}
+    </p>
+    <span>
+      <strong>Notes:</strong>
+    </span>
+    <textarea v-if="!!selectedUser" />
   </div>
 </template>
 
