@@ -19,9 +19,7 @@
 <script>
 import { useSelectedUser } from './useSelectedUser';
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue';
-const globalStorePromise = import('globalStore');
-
-// TODO import() is great for resiliency, but figure out an alternative
+const { subscribe, updateState, getState } = await import('globalStore');
 
 export default {
   props: [
@@ -33,31 +31,22 @@ export default {
     );
     const notesValue = ref('');
     watch(selectedUser, () => {
-      globalStorePromise.then(({ getState }) => {
-        notesValue.value = getState().userNotes?.[selectedUser?.value?.id] ?? '';
-      });
+      notesValue.value = getState().userNotes?.[selectedUser?.value?.id] ?? '';
     });
 
-    let storeUnsubscribe;
-
-    globalStorePromise.then(({ subscribe }) => {
-      storeUnsubscribe = subscribe((state) => {
-        notesValue.value = state.userNotes?.[selectedUser?.value?.id] ?? '';
-      });
+    const storeUnsubscribe = subscribe((state) => {
+      notesValue.value = state.userNotes?.[selectedUser?.value?.id] ?? '';
     });
 
     onUnmounted(() => {
-      if (storeUnsubscribe) {
-        storeUnsubscribe();
-      }
+      storeUnsubscribe();
     });
 
-    const updateNotes = (text) => globalStorePromise
-        .then(({ updateState }) => updateState((draft) => {
-          const userNotes = draft.userNotes ?? {};
-          userNotes[selectedUser?.value?.id] = text;
-          draft.userNotes = userNotes;
-        }));
+    const updateNotes = (text) => updateState((draft) => {
+      const userNotes = draft.userNotes ?? {};
+      userNotes[selectedUser?.value?.id] = text;
+      draft.userNotes = userNotes;
+    });
 
     const notes = computed({
       get: () => notesValue.value,
