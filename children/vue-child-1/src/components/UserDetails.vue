@@ -1,24 +1,24 @@
 <template>
   <div class="UserDetails">
-<!--    <img v-if="!!selectedUser" :src="selectedUser?.avatar" alt="avatar" />-->
-<!--    <p>-->
-<!--      <strong>Name: </strong>-->
-<!--      {{ selectedUser?.first_name }} {{ selectedUser?.last_name }}-->
-<!--    </p>-->
-<!--    <p>-->
-<!--      <strong>Email: </strong>-->
-<!--      {{ selectedUser?.email }}-->
-<!--    </p>-->
-<!--    <span>-->
-<!--      <strong>Notes:</strong>-->
-<!--    </span>-->
-<!--    <textarea v-if="!!selectedUser" />-->
+    <img v-if="!!selectedUser" :src="selectedUser?.avatar" alt="avatar" />
+    <p>
+      <strong>Name: </strong>
+      {{ selectedUser?.first_name }} {{ selectedUser?.last_name }}
+    </p>
+    <p>
+      <strong>Email: </strong>
+      {{ selectedUser?.email }}
+    </p>
+    <span>
+      <strong>Notes:</strong>
+    </span>
+    <textarea v-if="!!selectedUser" v-model="notes" />
   </div>
 </template>
 
 <script>
 import { useSelectedUser } from './useSelectedUser';
-import { computed, onMounted, onUnmounted, ref } from 'vue';
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue';
 const globalStorePromise = import('globalStore');
 
 // TODO import() is great for resiliency, but figure out an alternative
@@ -31,15 +31,18 @@ export default {
     const selectedUser = useSelectedUser(
         computed(() => props.users)
     );
-    const notes = ref('');
+    const notesValue = ref('');
+    watch(selectedUser, () => {
+      globalStorePromise.then(({ getState }) => {
+        notesValue.value = getState().userNotes?.[selectedUser?.value?.id] ?? '';
+      });
+    });
 
     let storeUnsubscribe;
 
-    onMounted(() => {
-      globalStorePromise.then(({ subscribe }) => {
-        storeUnsubscribe = subscribe((state) => {
-          notes.value = state.userNotes?.[selectedUser?.value?.id] ?? '';
-        });
+    globalStorePromise.then(({ subscribe }) => {
+      storeUnsubscribe = subscribe((state) => {
+        notesValue.value = state.userNotes?.[selectedUser?.value?.id] ?? '';
       });
     });
 
@@ -56,9 +59,13 @@ export default {
           draft.userNotes = userNotes;
         }));
 
+    const notes = computed({
+      get: () => notesValue.value,
+      set: (value) => updateNotes(value)
+    });
+
     return {
       selectedUser,
-      updateNotes,
       notes
     }
   }
