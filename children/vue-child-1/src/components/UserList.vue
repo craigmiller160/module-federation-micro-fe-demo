@@ -12,6 +12,8 @@
 
 <script>
 import { useSelectedUser } from './useSelectedUser';
+import { useRoute } from 'vue-router';
+import { onUpdated, watch } from 'vue';
 
 export default {
   props: [

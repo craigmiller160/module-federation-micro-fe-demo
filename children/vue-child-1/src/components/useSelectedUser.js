@@ -1,5 +1,5 @@
 import { useRoute } from 'vue-router';
-import { computed } from 'vue';
+import { computed, watch } from 'vue';
 
 export const useSelectedUser = (users) => {
     const route = useRoute();
