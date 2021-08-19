@@ -1,25 +1,27 @@
 <template>
   <div class="UserDetails">
-    <img v-if="!!selectedUser" :src="selectedUser?.avatar" alt="avatar" />
-    <p>
-      <strong>Name: </strong>
-      {{ selectedUser?.first_name }} {{ selectedUser?.last_name }}
-    </p>
-    <p>
-      <strong>Email: </strong>
-      {{ selectedUser?.email }}
-    </p>
-    <span>
-      <strong>Notes:</strong>
-    </span>
-    <textarea v-if="!!selectedUser" />
+<!--    <img v-if="!!selectedUser" :src="selectedUser?.avatar" alt="avatar" />-->
+<!--    <p>-->
+<!--      <strong>Name: </strong>-->
+<!--      {{ selectedUser?.first_name }} {{ selectedUser?.last_name }}-->
+<!--    </p>-->
+<!--    <p>-->
+<!--      <strong>Email: </strong>-->
+<!--      {{ selectedUser?.email }}-->
+<!--    </p>-->
+<!--    <span>-->
+<!--      <strong>Notes:</strong>-->
+<!--    </span>-->
+<!--    <textarea v-if="!!selectedUser" />-->
   </div>
 </template>
 
 <script>
 import { useSelectedUser } from './useSelectedUser';
 import { onMounted, onUnmounted, ref } from 'vue';
-import { subscribe, updateState } from 'globalStore';
+const globalStorePromise = import('globalStore');
+
+// TODO import() is great for resiliency, but figure out an alternative
 
 export default {
   props: [
@@ -32,8 +34,10 @@ export default {
     let storeUnsubscribe;
 
     onMounted(() => {
-      storeUnsubscribe = subscribe((state) => {
-        notes.value = state.userNotes?.[selectedUser?.value?.id] ?? '';
+      globalStorePromise.then(({ subscribe }) => {
+        storeUnsubscribe = subscribe((state) => {
+          notes.value = state.userNotes?.[selectedUser?.value?.id] ?? '';
+        });
       });
     });
 
@@ -43,8 +47,17 @@ export default {
       }
     });
 
+    const updateNotes = (text) => globalStorePromise
+        .then(({ updateState }) => updateState((draft) => {
+          const userNotes = draft.userNotes ?? {};
+          userNotes[selectedUser?.value?.id] = text;
+          draft.userNotes = userNotes;
+        }));
+
     return {
-      selectedUser
+      selectedUser,
+      updateNotes,
+      notes
     }
   }
 }
