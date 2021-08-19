@@ -1,5 +1,5 @@
-import TestComp from './TestComp';
+import GlobalRouterConnector from './GlobalRouterConnector';
 
 export {
-    TestComp
+    GlobalRouterConnector
 }
