@@ -1,13 +1,13 @@
 {
   "name": "@mfdemo/global-router-vue-router",
   "version": "0.0.1-beta",
-  "main": "lib/index.js",
+  "main": "lib/index.common.js",
   "files": [
     "lib",
     ".yalc"
   ],
   "scripts": {
-    "build": "vue-cli-service build --target lib --name myLib --dest lib ./src/index.js"
+    "build": "vue-cli-service build --target lib --name index --dest lib ./src/index.js"
   },
   "devDependencies": {
     "@vue/cli-service": "^4.5.13",
