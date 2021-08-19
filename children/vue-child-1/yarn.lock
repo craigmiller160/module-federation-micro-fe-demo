@@ -28,9 +28,12 @@
 "@mfdemo/create-web-component-vue@file:.yalc/@mfdemo/create-web-component-vue":
   version "0.0.1-beta"
   dependencies:
-    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-vue-0.0.1-beta-426b8e92-f216-492e-8d99-2effbb9077bb-1629321497764/node_modules/@mfdemo/create-web-component-vue/.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-vue-0.0.1-beta-43cd583f-83c1-47d7-96a0-779fadb2512d-1629404125194/node_modules/@mfdemo/create-web-component-vue/.yalc/@mfdemo/create-web-component"
 
 "@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-vue/.yalc/@mfdemo/create-web-component":
+  version "0.0.1-beta"
+
+"@mfdemo/global-router-vue-router@file:.yalc/@mfdemo/global-router-vue-router":
   version "0.0.1-beta"
 
 "@mfdemo/webpack-base@file:.yalc/@mfdemo/webpack-base":
