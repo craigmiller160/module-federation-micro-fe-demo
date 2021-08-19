@@ -19,7 +19,7 @@
 <script>
 import { useSelectedUser } from './useSelectedUser';
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue';
-const { subscribe, updateState, getState } = await import('globalStore');
+const { subscribe, updateState, getState } = await import('globalStore').catch((ex) => alert(ex.message));
 
 export default {
   props: [
