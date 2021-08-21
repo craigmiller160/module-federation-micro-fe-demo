@@ -2,7 +2,16 @@
 
 currentDir=$(pwd)
 
-function doUpgrade {
+printErrors() {
+  local IFS=$'\n'
+  for error in $1; do
+    if [[ $error == error* ]]; then
+      echo $error
+    fi
+  done
+}
+
+doUpgrade() {
   dirs=$(ls "$currentDir/$1")
   for dirName in $dirs; do
     fullPath="$currentDir/$1/$dirName"
@@ -10,8 +19,8 @@ function doUpgrade {
     if [[ "$dependencyMatch" != "" ]]; then
       echo "Upgrading $dirName"
       cd $fullPath
-      # TODO how to further suppress error output
-      yarn upgrade $2 1>/dev/null
+      errors=$(yarn upgrade $2 2>&1 >/dev/null)
+      printErrors "$errors"
     else
       echo "Not upgrading $dirName"
     fi
