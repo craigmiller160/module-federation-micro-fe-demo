@@ -25,6 +25,8 @@ export default {
       }
     };
 
+    console.log('Router', router); // TODO delete this
+
     const routeUnsubscribe = watch(route, (newValue, oldValue) => {
       if (currentPathname !== newValue.path) {
         const event = new CustomEvent(EVENT_NAME, {
