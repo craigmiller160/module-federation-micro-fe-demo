@@ -3,6 +3,7 @@
 currentDir=$(pwd)
 RED='\033[0;31m'
 NC='\033[0m'
+DEP=
 
 printErrors() {
   local IFS=$'\n'
@@ -23,6 +24,11 @@ runCommand() {
 
 replaceYalcWithReal() {
   echo "Removing yalc version of $2 in $dirName"
+  runCommand "yalc remove $2"
+  runCommand "yarn"
+
+  echo "Adding real version of $2 in $dirName"
+  runCommand "yarn add $2"
 }
 
 upgradeDependency() {
@@ -52,14 +58,24 @@ checkAndDoUpgrade() {
 
 }
 
-if [[ $# -ne 1 ]]; then
-  echo "Must provide name of dependency to upgrade"
-  exit 1
-fi
+validateArgs() {
+  echo $@
+  if [[ $# -ne 1 ]]; then
+    echo "Must provide name of dependency to upgrade"
+    exit 1
+  fi
+
+  if [[ $1 != @mfdemo/* ]]; then
+    echo "Invalid dependency name $2"
+    exit 1
+  fi
+}
+
+validateArgs $@
 
 #checkAndDoUpgrade 'parents' "$1"
 #cd $currentDir
 #checkAndDoUpgrade 'children' "$1"
 #cd $currentDir
-checkAndDoUpgrade 'utilities' "$1"
+#checkAndDoUpgrade 'utilities' "$1"
 exit 0
