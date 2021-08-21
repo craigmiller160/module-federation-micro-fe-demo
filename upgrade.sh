@@ -46,7 +46,7 @@ checkAndDoUpgrade() {
   dirs=$(ls "$currentDir/$1")
   for dirName in $dirs; do
     fullPath="$currentDir/$1/$dirName"
-    dependencyMatch=$(cat "$fullPath/package.json" | grep "$2" | grep -v "name\":")
+    dependencyMatch=$(cat "$fullPath/package.json" | grep "\"$2\"" | grep -v "name\":")
     yalcMatch=$(echo "$dependencyMatch" | grep "yalc")
 
     cd $fullPath
