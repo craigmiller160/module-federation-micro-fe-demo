@@ -10,7 +10,9 @@
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@mfdemo/create-web-component": "^0.0.1-beta.1"
+  },
   "devDependencies": {
     "@babel/cli": "^7.14.8",
     "@babel/core": "^7.15.0",
