@@ -8,7 +8,7 @@
     "build": "cross-env NODE_ENV=production webpack"
   },
   "devDependencies": {
-    "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base",
+    "@mfdemo/webpack-base": "^0.0.1-beta",
     "@vue/compiler-sfc": "^3.2.4",
     "cross-env": "^7.0.3",
     "vue-loader": "^16.5.0"
