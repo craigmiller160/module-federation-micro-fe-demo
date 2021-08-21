@@ -1,6 +1,9 @@
 {
   "name": "@mfdemo/webpack-base",
   "version": "0.0.1-beta",
+  "scripts": {
+    "build": "echo 'No build needed'"
+  },
   "files": [
     "webpack.config.js",
     ".yalc"
