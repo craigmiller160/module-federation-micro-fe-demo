@@ -27,8 +27,14 @@ replaceYalcWithReal() {
   runCommand "yalc remove $2"
   runCommand "yarn"
 
+  devArg=""
+  if [[ "$2" == "@mfdemo/webpack-base" ]]; then
+    devArg="--dev"
+  fi
+
   echo "Adding real version of $2 in $dirName"
-  runCommand "yarn add $2"
+  echo "$devArg"
+#  runCommand "yarn add $devArg $2"
 }
 
 upgradeDependency() {
@@ -77,5 +83,5 @@ validateArgs $@
 #cd $currentDir
 #checkAndDoUpgrade 'children' "$1"
 #cd $currentDir
-#checkAndDoUpgrade 'utilities' "$1"
+checkAndDoUpgrade 'utilities' "$1"
 exit 0
