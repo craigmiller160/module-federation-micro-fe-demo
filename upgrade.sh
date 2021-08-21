@@ -21,6 +21,15 @@ runCommand() {
 
 # TODO re-usable function for wrapping error handling of commands
 
+replaceYalcWithReal() {
+  echo "Removing yalc version of $2 in $dirName"
+}
+
+upgradeDependency() {
+  echo "Upgrading $2 in $1"
+  runCommand "yarn upgrade $2"
+}
+
 # TODO split this into functions
 checkAndDoUpgrade() {
   # TODO change the log output to group log output for specific directories
@@ -30,16 +39,12 @@ checkAndDoUpgrade() {
     dependencyMatch=$(cat "$fullPath/package.json" | grep "$2" | grep -v "name\":")
     yalcMatch=$(echo "$dependencyMatch" | grep "yalc")
 
-    if [[ "$yalcMatch" != "" ]]; then
-      echo "Removing yalc version of $2 in $dirName"
-      errors=$(yalc remove $2 2>&1 >/dev/null)
-      printErrors "$errors"
-    fi
+    cd $fullPath
 
-    if [[ "$dependencyMatch" != "" ]]; then
-      echo "Upgrading $2 in $dirName"
-      cd $fullPath
-      runCommand "yarn upgrade $2"
+    if [[ "$yalcMatch" != "" ]]; then
+      replaceYalcWithReal "$dirName" "$2"
+    elif [[ "$dependencyMatch" != "" ]]; then
+      upgradeDependency "$dirName" "$2"
     else
       echo "Not upgrading $2 in $dirName"
     fi
