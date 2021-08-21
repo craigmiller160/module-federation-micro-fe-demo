@@ -15,6 +15,7 @@ printErrors() {
 
 runCommand() {
   errors=$($1 2>&1 >/dev/null)
+  echo "$errors" # TODO delete this
   printErrors "$errors"
 }
 
@@ -29,11 +30,11 @@ checkAndDoUpgrade() {
     dependencyMatch=$(cat "$fullPath/package.json" | grep "$2" | grep -v "name\":")
     yalcMatch=$(echo "$dependencyMatch" | grep "yalc")
 
-#    if [[ "$yalcMatch" != "" ]]; then
-#      echo "Removing yalc version of $2 in $dirName"
-#      errors=$(yalc remove $2 2>&1 >/dev/null)
-#      printErrors "$errors"
-#    fi
+    if [[ "$yalcMatch" != "" ]]; then
+      echo "Removing yalc version of $2 in $dirName"
+      errors=$(yalc remove $2 2>&1 >/dev/null)
+      printErrors "$errors"
+    fi
 
     if [[ "$dependencyMatch" != "" ]]; then
       echo "Upgrading $2 in $dirName"
