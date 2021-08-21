@@ -1,6 +1,9 @@
 {
   "name": "@mfdemo/root",
   "scripts": {
-    "upgrade": "node ./scripts/upgrade.js"
+    "doUpgrade": "node ./scripts/upgrade.js"
+  },
+  "devDependencies": {
+    "cross-spawn": "^7.0.3"
   }
 }
