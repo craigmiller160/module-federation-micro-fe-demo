@@ -19,8 +19,7 @@ const doUpgrade = (rootDir, dependencyName) => {
                 !!packageJson.devDependencies?.[dependencyName]
         })
         .forEach(([dirPath]) => {
-            process.chdir(dirPath);
-            console.log('Upgrading')
+            console.log('Upgrading'); // TODO delete this
             spawn.sync('yarn', [
                 'upgrade',
                 dependencyName
@@ -28,7 +27,7 @@ const doUpgrade = (rootDir, dependencyName) => {
                 stdio: 'inherit',
                 cwd: dirPath
             });
-            console.log('Done');
+            console.log('Done'); // TODO delete this
         });
 };
 
