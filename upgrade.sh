@@ -16,7 +16,6 @@ printErrors() {
 
 runCommand() {
   errors=$($1 2>&1 >/dev/null)
-  echo "$errors" # TODO delete this
   printErrors "$errors"
 }
 
@@ -33,8 +32,7 @@ replaceYalcWithReal() {
   fi
 
   echo "Adding real version of $2 in $dirName"
-  echo "$devArg"
-#  runCommand "yarn add $devArg $2"
+  runCommand "yarn add $devArg $2"
 }
 
 upgradeDependency() {
@@ -79,9 +77,9 @@ validateArgs() {
 
 validateArgs $@
 
-#checkAndDoUpgrade 'parents' "$1"
-#cd $currentDir
-#checkAndDoUpgrade 'children' "$1"
-#cd $currentDir
+checkAndDoUpgrade 'parents' "$1"
+cd $currentDir
+checkAndDoUpgrade 'children' "$1"
+cd $currentDir
 checkAndDoUpgrade 'utilities' "$1"
 exit 0

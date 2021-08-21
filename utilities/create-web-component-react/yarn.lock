@@ -936,9 +936,6 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component":
-  version "0.0.1-beta"
-
 "@nicolo-ribaudo/chokidar-2@2.1.8-no-fsevents.2":
   version "2.1.8-no-fsevents.2"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@nicolo-ribaudo/chokidar-2/-/chokidar-2-2.1.8-no-fsevents.2.tgz#e324c0a247a5567192dd7180647709d7e2faf94b"

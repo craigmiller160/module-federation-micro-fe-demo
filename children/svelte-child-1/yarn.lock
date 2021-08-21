@@ -10,7 +10,12 @@
 "@mfdemo/create-web-component-svelte@file:.yalc/@mfdemo/create-web-component-svelte":
   version "0.0.1-beta"
   dependencies:
-    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-svelte-0.0.1-beta-31bf2476-0547-4afd-9744-f3b064356a64-1629575376940/node_modules/@mfdemo/create-web-component-svelte/.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-svelte-0.0.1-beta-284778ac-9143-42dd-abc5-659ac462eb4b-1629580276865/node_modules/@mfdemo/create-web-component-svelte/.yalc/@mfdemo/create-web-component"
+
+"@mfdemo/create-web-component@^0.0.1-beta.1":
+  version "0.0.1-beta.1"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component/-/create-web-component-0.0.1-beta.1.tgz#2571dcaf4b2b57686f4942a65f36c535bcc39e63"
+  integrity sha512-4jmOKNeBTTsByeRq6mG3+CS/K2BJX4HNYoNRouQiVUFbLbColc3SBvJEJeuPH7BQQqY1RuHRpGSUibQqSw2LpA==
 
 "@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-svelte/.yalc/@mfdemo/create-web-component":
   version "0.0.1-beta"
