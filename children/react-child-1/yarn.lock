@@ -925,18 +925,17 @@
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@discoveryjs/json-ext/-/json-ext-0.5.3.tgz#90420f9f9c6d3987f176a19a7d8e764271a2f55d"
   integrity sha512-Fxt+AfXgjMoin2maPIYzFZnQjAXjAL0PHscM5pRTtatFqB+vZxAM9tLp2Optnuw3QOQC40jTNeGYFOMvyf7v9g==
 
-"@mfdemo/create-web-component-react@file:.yalc/@mfdemo/create-web-component-react":
-  version "0.0.1-beta"
+"@mfdemo/create-web-component-react@^0.0.1-beta.1":
+  version "0.0.1-beta.1"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component-react/-/create-web-component-react-0.0.1-beta.1.tgz#f16a64b7ce28f50bc68645b92c8bc97374bb032a"
+  integrity sha512-aDQevhb8/72zaB5M3BwY58xtXuyMT9CLrdVD6wS1K0ro2dA9oNRLV4uyXQc2Ay9r8wCRz28WEAREfp3A1bJIHA==
   dependencies:
-    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-react-0.0.1-beta-ce2b4fa9-b025-4767-a38d-7c821753fe55-1629580254101/node_modules/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component" "^0.0.1-beta.1"
 
 "@mfdemo/create-web-component@^0.0.1-beta.1":
   version "0.0.1-beta.1"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component/-/create-web-component-0.0.1-beta.1.tgz#2571dcaf4b2b57686f4942a65f36c535bcc39e63"
   integrity sha512-4jmOKNeBTTsByeRq6mG3+CS/K2BJX4HNYoNRouQiVUFbLbColc3SBvJEJeuPH7BQQqY1RuHRpGSUibQqSw2LpA==
-
-"@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component":
-  version "0.0.1-beta"
 
 "@mfdemo/global-router-react-router@file:.yalc/@mfdemo/global-router-react-router":
   version "0.0.1-beta"
