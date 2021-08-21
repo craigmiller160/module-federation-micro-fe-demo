@@ -1,0 +1,6 @@
+{
+  "name": "@mfdemo/root",
+  "scripts": {
+    "upgrade": "node ./scripts/upgrade.js"
+  }
+}
