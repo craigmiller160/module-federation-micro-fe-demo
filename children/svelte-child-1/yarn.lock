@@ -10,7 +10,7 @@
 "@mfdemo/create-web-component-svelte@file:.yalc/@mfdemo/create-web-component-svelte":
   version "0.0.1-beta"
   dependencies:
-    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-svelte-0.0.1-beta-9298a8ec-9d19-42b6-b614-f4d9e895e960-1629575293707/node_modules/@mfdemo/create-web-component-svelte/.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-svelte-0.0.1-beta-31bf2476-0547-4afd-9744-f3b064356a64-1629575376940/node_modules/@mfdemo/create-web-component-svelte/.yalc/@mfdemo/create-web-component"
 
 "@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-svelte/.yalc/@mfdemo/create-web-component":
   version "0.0.1-beta"

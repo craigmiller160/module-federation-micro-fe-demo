@@ -17,7 +17,7 @@ doUpgrade() {
   dirs=$(ls "$currentDir/$1")
   for dirName in $dirs; do
     fullPath="$currentDir/$1/$dirName"
-    dependencyMatch=$(cat "$fullPath/package.json" | grep "$2")
+    dependencyMatch=$(cat "$fullPath/package.json" | grep "$2" | grep -v "name\":")
     if [[ "$dependencyMatch" != "" ]]; then
       echo "Upgrading $2 in $dirName"
       cd $fullPath

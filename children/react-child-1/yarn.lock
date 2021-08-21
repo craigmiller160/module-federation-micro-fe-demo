@@ -928,7 +928,7 @@
 "@mfdemo/create-web-component-react@file:.yalc/@mfdemo/create-web-component-react":
   version "0.0.1-beta"
   dependencies:
-    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-react-0.0.1-beta-cf8b6bfb-35d3-4d14-ab0e-070ae966737c-1629575286089/node_modules/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-react-0.0.1-beta-2163e0ce-9228-449b-8b1e-9ca9d7786274-1629575369060/node_modules/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component"
 
 "@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component":
   version "0.0.1-beta"
