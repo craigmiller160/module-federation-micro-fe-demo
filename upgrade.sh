@@ -1,12 +1,14 @@
 #!/bin/bash
 
 currentDir=$(pwd)
+RED='\033[0;31m'
+NC='\033[0m'
 
 printErrors() {
   local IFS=$'\n'
   for error in $1; do
     if [[ $error == error* ]]; then
-      echo $error
+      printf "${RED}$error${NC}\n"
     fi
   done
 }

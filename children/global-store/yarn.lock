@@ -7,7 +7,7 @@
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@discoveryjs/json-ext/-/json-ext-0.5.3.tgz#90420f9f9c6d3987f176a19a7d8e764271a2f55d"
   integrity sha512-Fxt+AfXgjMoin2maPIYzFZnQjAXjAL0PHscM5pRTtatFqB+vZxAM9tLp2Optnuw3QOQC40jTNeGYFOMvyf7v9g==
 
-"@mfdemo/webpack-base@^0.0.1-beta.1":
+"@mfdemo/webpack-base@^0.0.1-beta":
   version "0.0.1-beta.1"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/webpack-base/-/webpack-base-0.0.1-beta.1.tgz#7d61119bc98dff976a8fbacefd2bc1bbec8c3114"
   integrity sha512-e/UkXuau655JJb4D98noxxWKTB+oyTcPUf+OYGill/nIXisgvnL19OzXcztRXm9o3UEw+pydZiQ05GFSiC8fww==
