@@ -19,10 +19,8 @@ runCommand() {
   printErrors "$errors"
 }
 
-# TODO re-usable function for wrapping error handling of commands
-
 replaceYalcWithReal() {
-  echo "Removing yalc version of $2 in $dirName"
+  echo "Switching from yalc to real version of $2 in $dirName"
   runCommand "yalc remove $2"
   runCommand "yarn"
 
@@ -31,7 +29,6 @@ replaceYalcWithReal() {
     devArg="--dev"
   fi
 
-  echo "Adding real version of $2 in $dirName"
   runCommand "yarn add $devArg $2"
 }
 
@@ -40,9 +37,7 @@ upgradeDependency() {
   runCommand "yarn upgrade $2"
 }
 
-# TODO split this into functions
 checkAndDoUpgrade() {
-  # TODO change the log output to group log output for specific directories
   dirs=$(ls "$currentDir/$1")
   for dirName in $dirs; do
     fullPath="$currentDir/$1/$dirName"
@@ -59,7 +54,6 @@ checkAndDoUpgrade() {
       echo "Not upgrading $2 in $dirName"
     fi
   done
-
 }
 
 validateArgs() {
