@@ -10,7 +10,7 @@
 "@mfdemo/create-web-component-svelte@file:.yalc/@mfdemo/create-web-component-svelte":
   version "0.0.1-beta"
   dependencies:
-    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-svelte-0.0.1-beta-d815b550-c4c9-4a71-831d-81f3736b4e78-1629572095895/node_modules/@mfdemo/create-web-component-svelte/.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-svelte-0.0.1-beta-433849b0-d0d5-421b-a6cf-818ae821e09b-1629574428779/node_modules/@mfdemo/create-web-component-svelte/.yalc/@mfdemo/create-web-component"
 
 "@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-svelte/.yalc/@mfdemo/create-web-component":
   version "0.0.1-beta"
@@ -18,7 +18,7 @@
 "@mfdemo/global-router-svelte-navigator@file:.yalc/@mfdemo/global-router-svelte-navigator":
   version "0.0.1-beta"
 
-"@mfdemo/webpack-base@^0.0.1-beta.1":
+"@mfdemo/webpack-base@^0.0.1-beta":
   version "0.0.1-beta.1"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/webpack-base/-/webpack-base-0.0.1-beta.1.tgz#7d61119bc98dff976a8fbacefd2bc1bbec8c3114"
   integrity sha512-e/UkXuau655JJb4D98noxxWKTB+oyTcPUf+OYGill/nIXisgvnL19OzXcztRXm9o3UEw+pydZiQ05GFSiC8fww==

@@ -928,7 +928,7 @@
 "@mfdemo/create-web-component-react@file:.yalc/@mfdemo/create-web-component-react":
   version "0.0.1-beta"
   dependencies:
-    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-react-0.0.1-beta-a5749194-0afd-4650-91a1-e758816756ab-1629572057693/node_modules/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-react-0.0.1-beta-1a94fe76-3fbc-44cd-9dfe-3966aeec1930-1629574421858/node_modules/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component"
 
 "@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-react/.yalc/@mfdemo/create-web-component":
   version "0.0.1-beta"
@@ -936,7 +936,7 @@
 "@mfdemo/global-router-react-router@file:.yalc/@mfdemo/global-router-react-router":
   version "0.0.1-beta"
 
-"@mfdemo/webpack-base@^0.0.1-beta.1":
+"@mfdemo/webpack-base@^0.0.1-beta":
   version "0.0.1-beta.1"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/webpack-base/-/webpack-base-0.0.1-beta.1.tgz#7d61119bc98dff976a8fbacefd2bc1bbec8c3114"
   integrity sha512-e/UkXuau655JJb4D98noxxWKTB+oyTcPUf+OYGill/nIXisgvnL19OzXcztRXm9o3UEw+pydZiQ05GFSiC8fww==
