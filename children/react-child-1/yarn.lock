@@ -926,9 +926,9 @@
   integrity sha512-Fxt+AfXgjMoin2maPIYzFZnQjAXjAL0PHscM5pRTtatFqB+vZxAM9tLp2Optnuw3QOQC40jTNeGYFOMvyf7v9g==
 
 "@mfdemo/create-web-component-react@^0.0.1-beta.1":
-  version "0.0.1-beta.1"
-  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component-react/-/create-web-component-react-0.0.1-beta.1.tgz#f16a64b7ce28f50bc68645b92c8bc97374bb032a"
-  integrity sha512-aDQevhb8/72zaB5M3BwY58xtXuyMT9CLrdVD6wS1K0ro2dA9oNRLV4uyXQc2Ay9r8wCRz28WEAREfp3A1bJIHA==
+  version "0.0.1-beta.2"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component-react/-/create-web-component-react-0.0.1-beta.2.tgz#cc2816e355001bfc513b938ee1cde13e75295f85"
+  integrity sha512-L1PLXWw8shnKK8ps2hXj1TZEIc6n1xh85KR7ihhlVnzXlw8EALC15uhBEibb7y500nF2w6m5/5Ta072Ab7Jd6Q==
   dependencies:
     "@mfdemo/create-web-component" "^0.0.1-beta.1"
 
