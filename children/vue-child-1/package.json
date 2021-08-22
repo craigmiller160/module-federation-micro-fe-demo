@@ -14,7 +14,7 @@
     "vue-loader": "^16.5.0"
   },
   "dependencies": {
-    "@mfdemo/create-web-component-vue": "file:.yalc/@mfdemo/create-web-component-vue",
+    "@mfdemo/create-web-component-vue": "^0.0.1-beta.1",
     "axios": "^0.21.1",
     "core-js": "^3.16.2",
     "regenerator-runtime": "^0.13.9",

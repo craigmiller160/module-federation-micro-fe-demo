@@ -25,18 +25,17 @@
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@discoveryjs/json-ext/-/json-ext-0.5.3.tgz#90420f9f9c6d3987f176a19a7d8e764271a2f55d"
   integrity sha512-Fxt+AfXgjMoin2maPIYzFZnQjAXjAL0PHscM5pRTtatFqB+vZxAM9tLp2Optnuw3QOQC40jTNeGYFOMvyf7v9g==
 
-"@mfdemo/create-web-component-vue@file:.yalc/@mfdemo/create-web-component-vue":
-  version "0.0.1-beta"
+"@mfdemo/create-web-component-vue@^0.0.1-beta.1":
+  version "0.0.1-beta.1"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component-vue/-/create-web-component-vue-0.0.1-beta.1.tgz#604ff4d800ee1dd1f48ef5b2802960e1438c5a15"
+  integrity sha512-xmee2lmqMgdA7GAskXLLdgBNhRKhLLs54jarvsbplPbIjjjmeIe9QNv420audiwbVuf2Oh/RQ/MtUHKTWJ/5Xg==
   dependencies:
-    "@mfdemo/create-web-component" "file:../../../../../.cache/yarn/v6/npm-@mfdemo-create-web-component-vue-0.0.1-beta-90254d0c-24f8-4781-9222-db2302d251c1-1629580278031/node_modules/@mfdemo/create-web-component-vue/.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component" "^0.0.1-beta.1"
 
 "@mfdemo/create-web-component@^0.0.1-beta.1":
   version "0.0.1-beta.1"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component/-/create-web-component-0.0.1-beta.1.tgz#2571dcaf4b2b57686f4942a65f36c535bcc39e63"
   integrity sha512-4jmOKNeBTTsByeRq6mG3+CS/K2BJX4HNYoNRouQiVUFbLbColc3SBvJEJeuPH7BQQqY1RuHRpGSUibQqSw2LpA==
-
-"@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component-vue/.yalc/@mfdemo/create-web-component":
-  version "0.0.1-beta"
 
 "@mfdemo/webpack-base@^0.0.1-beta":
   version "0.0.1-beta.1"
