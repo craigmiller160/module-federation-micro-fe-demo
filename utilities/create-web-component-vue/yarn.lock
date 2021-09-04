@@ -884,8 +884,10 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@mfdemo/create-web-component@file:.yalc/@mfdemo/create-web-component":
-  version "0.0.1-beta"
+"@mfdemo/create-web-component@^0.0.1-beta.1":
+  version "0.0.1-beta.1"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component/-/create-web-component-0.0.1-beta.1.tgz#2571dcaf4b2b57686f4942a65f36c535bcc39e63"
+  integrity sha512-4jmOKNeBTTsByeRq6mG3+CS/K2BJX4HNYoNRouQiVUFbLbColc3SBvJEJeuPH7BQQqY1RuHRpGSUibQqSw2LpA==
 
 "@nicolo-ribaudo/chokidar-2@2.1.8-no-fsevents.2":
   version "2.1.8-no-fsevents.2"

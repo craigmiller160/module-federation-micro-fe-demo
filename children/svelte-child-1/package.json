@@ -8,15 +8,15 @@
     "build": "cross-env NODE_ENV=production webpack"
   },
   "devDependencies": {
-    "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base",
+    "@mfdemo/webpack-base": "^0.0.1-beta",
     "cross-env": "^7.0.3",
     "svelte": "^3.42.1",
     "svelte-loader": "^3.1.2",
     "svelte-preprocess": "^4.7.4"
   },
   "dependencies": {
-    "@mfdemo/create-web-component-svelte": "file:.yalc/@mfdemo/create-web-component-svelte",
-    "@mfdemo/global-router-svelte-navigator": "file:.yalc/@mfdemo/global-router-svelte-navigator",
+    "@mfdemo/create-web-component-svelte": "^0.0.1-beta.1",
+    "@mfdemo/global-router-svelte-navigator": "^0.0.1-beta.1",
     "axios": "^0.21.1",
     "core-js": "^3.16.1",
     "regenerator-runtime": "^0.13.9",

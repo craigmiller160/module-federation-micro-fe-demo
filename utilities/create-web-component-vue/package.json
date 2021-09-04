@@ -2,6 +2,10 @@
   "name": "@mfdemo/create-web-component-vue",
   "version": "0.0.1-beta",
   "main": "lib/index.js",
+  "publishConfig": {
+    "registry": "https://craigmiller160.ddns.net:30003/repository/npm-private/"
+  },
+  "author": "craigmiller160",
   "license": "MIT",
   "files": [
     "lib",
@@ -11,7 +15,7 @@
     "build": "rm -rf lib && babel src --out-dir lib"
   },
   "dependencies": {
-    "@mfdemo/create-web-component": "file:.yalc/@mfdemo/create-web-component"
+    "@mfdemo/create-web-component": "^0.0.1-beta.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",

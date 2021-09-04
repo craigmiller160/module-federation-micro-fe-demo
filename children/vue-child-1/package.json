@@ -8,14 +8,13 @@
     "build": "cross-env NODE_ENV=production webpack"
   },
   "devDependencies": {
-    "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base",
+    "@mfdemo/webpack-base": "^0.0.1-beta",
     "@vue/compiler-sfc": "^3.2.4",
     "cross-env": "^7.0.3",
     "vue-loader": "^16.5.0"
   },
   "dependencies": {
-    "@mfdemo/create-web-component-vue": "file:.yalc/@mfdemo/create-web-component-vue",
-    "@mfdemo/global-router-vue-router": "file:.yalc/@mfdemo/global-router-vue-router",
+    "@mfdemo/create-web-component-vue": "^0.0.1-beta.1",
     "axios": "^0.21.1",
     "core-js": "^3.16.2",
     "regenerator-runtime": "^0.13.9",

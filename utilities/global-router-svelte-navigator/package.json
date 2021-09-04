@@ -3,6 +3,10 @@
   "version": "0.0.1-beta",
   "main": "lib/index.js",
   "svelte": "src/index.js",
+  "publishConfig": {
+    "registry": "https://craigmiller160.ddns.net:30003/repository/npm-private/"
+  },
+  "author": "craigmiller160",
   "files": [
     ".yalc",
     "lib",
@@ -13,7 +17,7 @@
     "build": "cross-env NODE_ENV=production webpack"
   },
   "devDependencies": {
-    "@mfdemo/webpack-base": "file:.yalc/@mfdemo/webpack-base",
+    "@mfdemo/webpack-base": "^0.0.1-beta",
     "cross-env": "^7.0.3",
     "svelte": "^3.42.1",
     "svelte-loader": "^3.1.2",
