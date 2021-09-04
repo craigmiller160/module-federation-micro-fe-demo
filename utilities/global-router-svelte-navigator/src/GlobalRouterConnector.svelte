@@ -2,6 +2,8 @@
     import { useLocation, useNavigate } from 'svelte-navigator';
     import { onDestroy } from 'svelte';
 
+    // TODO why is this not responding to the first event from another micro-frontend?
+
     const EVENT_NAME = 'microFrontendGlobalRouter';
 
     let currentPathname = '';
