@@ -37,6 +37,9 @@
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component/-/create-web-component-0.0.1-beta.1.tgz#2571dcaf4b2b57686f4942a65f36c535bcc39e63"
   integrity sha512-4jmOKNeBTTsByeRq6mG3+CS/K2BJX4HNYoNRouQiVUFbLbColc3SBvJEJeuPH7BQQqY1RuHRpGSUibQqSw2LpA==
 
+"@mfdemo/global-router-vue-router@file:.yalc/@mfdemo/global-router-vue-router":
+  version "0.0.1-beta"
+
 "@mfdemo/webpack-base@^0.0.1-beta":
   version "0.0.1-beta.1"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/webpack-base/-/webpack-base-0.0.1-beta.1.tgz#7d61119bc98dff976a8fbacefd2bc1bbec8c3114"
