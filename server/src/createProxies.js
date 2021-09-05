@@ -5,7 +5,7 @@ const createProxy = (app, path, target) => {
         target,
         changeOrigin: true,
         pathRewrite: {
-            [`^/${path}`]: ''
+            [`^${path}`]: ''
         },
         logLevel: 'debug'
     }))

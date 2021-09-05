@@ -2,9 +2,9 @@
   "name": "@mfdemo/server",
   "version": "0.0.1-beta",
   "scripts": {
-    "start:reactChild1": "node src ../children/react-child-1/build 3002",
-    "start:vanillaParent": "node src ../parents/vanilla-parent/build 3000",
-    "start:globalStore": "node src ../children/global-store/build 3001"
+    "start:reactChild1": "node src ../../children/react-child-1/build 3002",
+    "start:vanillaParent": "node src ../../parents/vanilla-parent/build 3000",
+    "start:globalStore": "node src ../../children/global-store/build 3001"
   },
   "dependencies": {
     "express": "^4.17.1",
