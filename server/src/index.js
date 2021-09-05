@@ -1,5 +1,5 @@
 const express = require('express');
-const proxyMap = require('./proxyMap');
+const proxyMap = require('./createProxies');
 const createRoute = require('./createRoute');
 const path = require('path');
 
