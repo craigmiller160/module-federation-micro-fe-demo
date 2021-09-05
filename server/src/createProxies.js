@@ -1,14 +1,19 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
-const createProxies = (app) => {
-    app.use('/reactChild1', createProxyMiddleware({
-        target: 'http://localhost:3001',
+const createProxy = (app, path, target) => {
+    app.use(path, createProxyMiddleware({
+        target,
         changeOrigin: true,
         pathRewrite: {
-            '^/reactChild1': ''
+            [`^/${path}`]: ''
         },
         logLevel: 'debug'
-    }));
+    }))
+};
+
+const createProxies = (app) => {
+    createProxy(app, '/reactChild1', 'http://localhost:3002');
+    createProxy(app, '/globalStore', 'http://localhost:3001');
 };
 
 module.exports = createProxies;
