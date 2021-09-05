@@ -38,18 +38,10 @@ module.exports = merge(
                     globalStore: 'globalStore@/globalStore/remoteEntry.js'
                 },
                 exposes: {
-                    '.': './src/index.js'
+                    '.': './src/bootstrap.js'
                 },
                 shared: {
-                    ...dependencies,
-                    'core-js': {
-                        // requiredVersion: dependencies['core-js'],
-                        singleton: true
-                    },
-                    'regenerator-runtime': {
-                        // requiredVersion: dependencies['regenerator-runtime'],
-                        singleton: true
-                    }
+                    ...dependencies
                 }
             })
         ]
