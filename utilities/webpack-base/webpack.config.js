@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { merge } = require('webpack-merge');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer');
 
 const PRODUCTION_ENV = 'production';
 
@@ -121,9 +122,19 @@ const htmlConfig = {
     ]
 };
 
+const analyzer = {
+    plugins: [
+        new BundleAnalyzerPlugin()
+    ]
+};
+
 const configs = [baseConfig];
 if (indexHtmlExists) {
     configs.push(htmlConfig);
+}
+
+if (process.env.ANALYZE === 'true') {
+    configs.push(analyzer);
 }
 
 module.exports = merge(configs);
