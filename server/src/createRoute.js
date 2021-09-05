@@ -11,12 +11,7 @@ const createRoute = (app, buildRoot) => {
         console.log(`Received request: ${req.method} ${req.path}`);
         const filePath = getFilePath(buildRoot, req.path);
         if (!fs.existsSync(filePath)) {
-            console.error(`Cannot find file: ${filePath}`);
-            res.status(404);
-            res.set({
-                'Content-Type': 'text/plain'
-            })
-            res.send(`Cannot find file: ${filePath}`);
+            res.redirect('/');
             return;
         }
 
