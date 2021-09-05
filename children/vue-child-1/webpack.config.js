@@ -3,6 +3,8 @@ const { merge } = require('webpack-merge');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const { VueLoaderPlugin } = require('vue-loader');
 
+const { dependencies } = require('./package.json');
+
 module.exports = merge(
     baseConfig,
     {
@@ -33,6 +35,9 @@ module.exports = merge(
                 },
                 exposes: {
                     '.': './src/index.js'
+                },
+                shared: {
+                    ...dependencies
                 }
             })
         ],

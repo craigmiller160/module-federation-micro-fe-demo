@@ -4,6 +4,8 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 const preprocess = require('svelte-preprocess');
 const path = require('path');
 
+const { dependencies } = require('./package.json');
+
 const PRODUCTION_ENV = 'production';
 const isProd = process.env.NODE_ENV === PRODUCTION_ENV;
 
@@ -65,6 +67,9 @@ module.exports = merge(
                 },
                 exposes: {
                     '.': './src/index.js'
+                },
+                shared: {
+                    ...dependencies
                 }
             })
         ]
