@@ -18,7 +18,7 @@
 
 <script>
     import { createGetSelectedUser } from './createGetSelectedUser';
-    import { subscribe, updateState, getState } from 'globalStore'; // TODO refactor to be functional
+    const { subscribe, updateState, getState } = await import('globalStore').catch((ex) => alert(ex.message));
     import { afterUpdate, onDestroy } from 'svelte';
 
     export let users = [];
