@@ -20,9 +20,9 @@
   integrity sha512-4jmOKNeBTTsByeRq6mG3+CS/K2BJX4HNYoNRouQiVUFbLbColc3SBvJEJeuPH7BQQqY1RuHRpGSUibQqSw2LpA==
 
 "@mfdemo/global-router-svelte-navigator@^0.0.1-beta.1":
-  version "0.0.1-beta.1"
-  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/global-router-svelte-navigator/-/global-router-svelte-navigator-0.0.1-beta.1.tgz#7777c3a63ccff6fca2597f47566effeb1c067b39"
-  integrity sha512-hfyZYZxAZhetPgw6P6ZA1WKj0RTh78OTfnGb3J4w+k10xDnw8RaLTn8AeMwrPD5YBnApX5DKClq2kaK3LFAJXw==
+  version "0.0.1-beta.2"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/global-router-svelte-navigator/-/global-router-svelte-navigator-0.0.1-beta.2.tgz#d6bb8a9275710f87522e8aa75e1415098463a4d3"
+  integrity sha512-NXaNJzkxSELYF8wvPgBOklutrT0aOmaDDzpDoSDb4c750yyxiyvJBIsjy5wuGVirDXNTXfSHHr4R0eafhRJXUg==
 
 "@mfdemo/webpack-base@^0.0.1-beta":
   version "0.0.1-beta.1"
