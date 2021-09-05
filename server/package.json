@@ -1,6 +1,9 @@
 {
   "name": "@mfdemo/server",
   "version": "0.0.1-beta",
+  "scripts": {
+    "start:reactChild1": "node src ../children/react-child-1/build 3001"
+  },
   "dependencies": {
     "express": "^4.17.1"
   }
