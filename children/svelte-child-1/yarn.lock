@@ -25,9 +25,9 @@
   integrity sha512-NXaNJzkxSELYF8wvPgBOklutrT0aOmaDDzpDoSDb4c750yyxiyvJBIsjy5wuGVirDXNTXfSHHr4R0eafhRJXUg==
 
 "@mfdemo/webpack-base@^0.0.1-beta":
-  version "0.0.1-beta.2"
-  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/webpack-base/-/webpack-base-0.0.1-beta.2.tgz#5d88f75f3f779cf4d1c81d07cbace4dba836a406"
-  integrity sha512-BCqCTI/eMxlriad2T28DzMN41E22gMschNbwRobn3zSRLgW2S/I1BLrwPoHqmWp5dv5AJNE3pack5EZjqhpvXA==
+  version "0.0.1-beta.3"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/webpack-base/-/webpack-base-0.0.1-beta.3.tgz#476a2c73170e8fa8a832498cbdea68f0b46d7f3f"
+  integrity sha512-joWQXMCK+fRLKepEQuN8E9uWB1uIoBUus62uLmcC4q0FQ6PzNrf2mTzaPB+tnIT77zUqyI5LkNyuw7R0N4lGbQ==
   dependencies:
     clean-webpack-plugin "^4.0.0-alpha.0"
     css-loader "^6.2.0"
