@@ -1,5 +1,5 @@
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
+// import 'core-js/stable';
+// import 'regenerator-runtime/runtime';
 import { createApp } from 'vue';
 import router from './router';
 import App from './components/App';
