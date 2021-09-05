@@ -1,4 +1,7 @@
 {
   "name": "@mfdemo/server",
-  "version": "0.0.1-beta"
+  "version": "0.0.1-beta",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
