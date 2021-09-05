@@ -3,7 +3,8 @@
   "version": "0.0.1-beta",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve",
-    "build": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=production webpack",
+    "analyze": "cross-env NODE_ENV=production cross-env ANALYZE=true webpack"
   },
   "devDependencies": {
     "@mfdemo/webpack-base": "^0.0.1-beta",
