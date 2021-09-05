@@ -8,8 +8,8 @@ const startServer = () => {
     const port = process.argv[3];
 
     const app = express();
-    createRoute(app, buildRoot);
     createProxies(app);
+    createRoute(app, buildRoot);
 
     app.listen(port, () => {
         console.log(`Listening on port ${port}`);

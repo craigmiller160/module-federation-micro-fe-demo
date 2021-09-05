@@ -8,7 +8,7 @@ const createProxy = (app, path, target) => {
             [`^${path}`]: ''
         },
         logLevel: 'debug'
-    }))
+    }));
 };
 
 const createProxies = (app) => {
