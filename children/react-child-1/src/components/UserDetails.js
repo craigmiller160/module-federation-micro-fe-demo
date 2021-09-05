@@ -3,7 +3,7 @@ import { userPropType } from '../propTypes/userPropType';
 import PropTypes from 'prop-types';
 import { useSelectedUser } from './useSelectedUser';
 import { useEffect, useState } from 'react';
-import { subscribe, updateState } from 'globalStore'; // TODO refactor to be functional
+const { subscribe, updateState } = await import('globalStore').catch((ex) => alert(ex.message));
 
 export const UserDetails = (props) => {
     const [state, setState] = useState({
