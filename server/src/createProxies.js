@@ -14,6 +14,8 @@ const createProxy = (app, path, target) => {
 const createProxies = (app) => {
     createProxy(app, '/reactChild1', 'http://localhost:3002');
     createProxy(app, '/globalStore', 'http://localhost:3001');
+    createProxy(app, '/svelteChild1', 'http://localhost:3003');
+    createProxy(app, '/vueChild1', 'http://localhost:3004');
 };
 
 module.exports = createProxies;
