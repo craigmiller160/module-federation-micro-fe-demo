@@ -2,8 +2,6 @@
     import { useLocation, useNavigate } from 'svelte-navigator';
     import { onDestroy } from 'svelte';
 
-    // TODO why is this not responding to the first event from another micro-frontend?
-
     const EVENT_NAME = 'microFrontendGlobalRouter';
 
     let currentPathname = '';
@@ -20,6 +18,7 @@
             dispatching = false;
         }
     };
+    window.addEventListener(EVENT_NAME, globalRouterListener, true); // TODO if this fixes the problem, make this ordering change in all of them
 
     const locationUnsubscribe = location.subscribe((locationDetails) => {
         if (currentPathname !== locationDetails.pathname) {
@@ -33,8 +32,6 @@
         }
         currentPathname = locationDetails.pathname;
     });
-
-    window.addEventListener(EVENT_NAME, globalRouterListener, true);
 
     onDestroy(() => {
         locationUnsubscribe();
