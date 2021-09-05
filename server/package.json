@@ -5,6 +5,7 @@
     "start:reactChild1": "node src ../children/react-child-1/build 3001"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.1"
   }
 }
