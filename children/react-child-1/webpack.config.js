@@ -41,7 +41,15 @@ module.exports = merge(
                     '.': './src/index.js'
                 },
                 shared: {
-                    ...dependencies
+                    ...dependencies,
+                    'core-js': {
+                        // requiredVersion: dependencies['core-js'],
+                        singleton: true
+                    },
+                    'regenerator-runtime': {
+                        // requiredVersion: dependencies['regenerator-runtime'],
+                        singleton: true
+                    }
                 }
             })
         ]
