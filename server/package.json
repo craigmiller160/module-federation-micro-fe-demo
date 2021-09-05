@@ -6,7 +6,7 @@
     "start:vanillaParent": "node src ../../parents/vanilla-parent/build 3000",
     "start:globalStore": "node src ../../children/global-store/build 3001",
     "start:svelteChild1": "node src ../../children/svelte-child-1/build 3003",
-    "start:vueChild1": "node src ../../children/vue-child-1/build 30004"
+    "start:vueChild1": "node src ../../children/vue-child-1/build 3004"
   },
   "dependencies": {
     "express": "^4.17.1",
