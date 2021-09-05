@@ -1,5 +1,5 @@
 const express = require('express');
-const proxyMap = require('./createProxies');
+const createProxies = require('./createProxies');
 const createRoute = require('./createRoute');
 const path = require('path');
 
@@ -9,6 +9,7 @@ const startServer = () => {
 
     const app = express();
     createRoute(app, buildRoot);
+    createProxies(app);
 
     app.listen(port, () => {
         console.log(`Listening on port ${port}`);
