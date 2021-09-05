@@ -18,7 +18,7 @@
             dispatching = false;
         }
     };
-    window.addEventListener(EVENT_NAME, globalRouterListener, true); // TODO if this fixes the problem, make this ordering change in all of them
+    window.addEventListener(EVENT_NAME, globalRouterListener, true);
 
     const locationUnsubscribe = location.subscribe((locationDetails) => {
         if (currentPathname !== locationDetails.pathname) {

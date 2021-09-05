@@ -24,6 +24,7 @@ export default {
         dispatching = false;
       }
     };
+    window.addEventListener(EVENT_NAME, globalRouterListener, true);
 
     const routeUnsubscribe = watch(route, (newValue, oldValue) => {
       if (currentPathname !== newValue.path) {
@@ -37,7 +38,6 @@ export default {
       }
       currentPathname = newValue.path;
     });
-    window.addEventListener(EVENT_NAME, globalRouterListener, true);
 
     onUnmounted(() => {
       routeUnsubscribe();
