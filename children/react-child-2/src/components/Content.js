@@ -22,7 +22,7 @@ export const Content = () => {
     return (
         <div className={ classes.Content }>
             <div className={ classes.title }>
-                <h1>React Child 1</h1>
+                <h1>React Child 2</h1>
             </div>
             <Switch>
                 <Route
