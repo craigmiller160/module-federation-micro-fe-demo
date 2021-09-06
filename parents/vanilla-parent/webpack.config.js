@@ -37,6 +37,13 @@ module.exports = merge(
                         '^/vueChild1': ''
                     }
                 },
+                '/reactChild2': {
+                    target: 'http://localhost:3005',
+                    changeOrigin: true,
+                    pathRewrite: {
+                        '^/reactChild2': ''
+                    }
+                },
                 '/globalStore': {
                     target: 'http://localhost:3001',
                     changeOrigin: true,
@@ -53,7 +60,8 @@ module.exports = merge(
                 remotes: {
                     reactChild1: 'reactChild1@/reactChild1/remoteEntry.js',
                     svelteChild1: 'svelteChild1@/svelteChild1/remoteEntry.js',
-                    vueChild1: 'vueChild1@/vueChild1/remoteEntry.js'
+                    vueChild1: 'vueChild1@/vueChild1/remoteEntry.js',
+                    reactChild2: 'reactChild2@/reactChild2/remoteEntry.js'
                 },
                 ...shareDeps
             })
