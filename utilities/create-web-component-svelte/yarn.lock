@@ -885,9 +885,9 @@
     to-fast-properties "^2.0.0"
 
 "@mfdemo/create-web-component@^0.0.1-beta.1":
-  version "0.0.1-beta.1"
-  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component/-/create-web-component-0.0.1-beta.1.tgz#2571dcaf4b2b57686f4942a65f36c535bcc39e63"
-  integrity sha512-4jmOKNeBTTsByeRq6mG3+CS/K2BJX4HNYoNRouQiVUFbLbColc3SBvJEJeuPH7BQQqY1RuHRpGSUibQqSw2LpA==
+  version "0.0.1-beta.2"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component/-/create-web-component-0.0.1-beta.2.tgz#8273b85490a5a0b6deef29211a24c4e2a14d31f8"
+  integrity sha512-a7mx8GyhnbrDrj51wvIDG2w0a3BHbLbewuDZ26H76S1gK9fo7n7kBrcVizGt6/GrC7bXDN3KE84D1EoEAUbDMg==
 
 "@nicolo-ribaudo/chokidar-2@2.1.8-no-fsevents.2":
   version "2.1.8-no-fsevents.2"
