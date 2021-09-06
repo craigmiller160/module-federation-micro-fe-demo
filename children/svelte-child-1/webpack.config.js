@@ -11,6 +11,9 @@ if (process.env.SHARE_DEPS === 'true') {
         ...(dependencies || {}),
         '@mfdemo/create-web-component': {
             singleton: true
+        },
+        'svelte-navigator': { // TODO might not be needed
+            singleton: true
         }
     };
 }
