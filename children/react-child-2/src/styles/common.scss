@@ -1,0 +1,16 @@
+$color-primary: darkgreen;
+$color-secondary: lightgreen;
+$border-radius-size: 5px;
+$border-heavy-size: 3px;
+$border-light-size: 1px;
+$text-size-content: 1.5rem;
+
+@mixin border-heavy {
+  border: $border-heavy-size solid $color-primary;
+  border-radius: $border-radius-size;
+}
+
+@mixin border-light {
+  border: $border-light-size solid $color-primary;
+  border-radius: $border-radius-size;
+}
