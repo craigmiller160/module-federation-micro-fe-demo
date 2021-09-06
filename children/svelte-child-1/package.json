@@ -5,6 +5,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve",
     "build": "cross-env NODE_ENV=production webpack",
+    "build:share": "cross-env NODE_ENV=production SHARE_DEPS=true webpack",
     "analyze": "cross-env NODE_ENV=production ANALYZE=true webpack"
   },
   "devDependencies": {
