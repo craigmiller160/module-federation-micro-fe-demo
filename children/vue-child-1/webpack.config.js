@@ -23,7 +23,7 @@ module.exports = merge(
             ]
         },
         devServer: {
-            port: 3004,
+            port: 3007,
             proxy: {
                 '/globalStore': {
                     target: 'http://localhost:3001',

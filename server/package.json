@@ -8,7 +8,8 @@
     "start:svelteChild1": "node src ../../children/svelte-child-1/build 3003",
     "start:vueChild1": "node src ../../children/vue-child-1/build 3004",
     "start:reactChild2": "node src ../../children/react-child-2/build 3005",
-    "start:svelteChild2": "node src ../../children/svelte-child-2/build 3006"
+    "start:svelteChild2": "node src ../../children/svelte-child-2/build 3006",
+    "start:vueChild2": "node src ../../children/vue-child-2/build 3007"
   },
   "dependencies": {
     "express": "^4.17.1",
