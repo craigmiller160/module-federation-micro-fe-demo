@@ -58,7 +58,7 @@
 
 <div class="Content">
     <div class="title">
-        <h1>Svelte Child 1</h1>
+        <h1>Svelte Child 2</h1>
     </div>
     <Route path="/:userId">
         <div class="content">

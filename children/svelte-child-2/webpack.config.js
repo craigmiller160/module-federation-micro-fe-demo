@@ -33,7 +33,7 @@ module.exports = merge(
             ]
         },
         devServer: {
-            port: 3003,
+            port: 3006,
             proxy: {
                 '/globalStore': {
                     target: 'http://localhost:3001',
@@ -69,7 +69,7 @@ module.exports = merge(
         },
         plugins: [
             new ModuleFederationPlugin({
-                name: 'svelteChild1',
+                name: 'svelteChild2',
                 filename: 'remoteEntry.js',
                 remotes: {
                     globalStore: 'globalStore@/globalStore/remoteEntry.js'
