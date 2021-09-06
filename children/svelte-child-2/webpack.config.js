@@ -14,6 +14,9 @@ if (process.env.SHARE_DEPS === 'true') {
         },
         'svelte-navigator': { // TODO might not be needed
             singleton: true
+        },
+        svelte: { // TODO might not be needed
+            singleton: true
         }
     };
 }
