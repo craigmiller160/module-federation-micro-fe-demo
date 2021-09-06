@@ -926,21 +926,21 @@
   integrity sha512-Fxt+AfXgjMoin2maPIYzFZnQjAXjAL0PHscM5pRTtatFqB+vZxAM9tLp2Optnuw3QOQC40jTNeGYFOMvyf7v9g==
 
 "@mfdemo/create-web-component-react@^0.0.1-beta.1":
-  version "0.0.1-beta.2"
-  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component-react/-/create-web-component-react-0.0.1-beta.2.tgz#cc2816e355001bfc513b938ee1cde13e75295f85"
-  integrity sha512-L1PLXWw8shnKK8ps2hXj1TZEIc6n1xh85KR7ihhlVnzXlw8EALC15uhBEibb7y500nF2w6m5/5Ta072Ab7Jd6Q==
+  version "0.0.1-beta.3"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component-react/-/create-web-component-react-0.0.1-beta.3.tgz#cc03e014000ab3d6e28252f6ed83addc96293680"
+  integrity sha512-qqw6C1YmJd99DLbbndMHF58CMUODEEIf/cDwkf+RA9+6JIHur445ScVPG1DPNSaN0rWNqo2/UvsyKgIWV6rPgw==
   dependencies:
     "@mfdemo/create-web-component" "^0.0.1-beta.1"
 
 "@mfdemo/create-web-component@^0.0.1-beta.1":
-  version "0.0.1-beta.1"
-  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component/-/create-web-component-0.0.1-beta.1.tgz#2571dcaf4b2b57686f4942a65f36c535bcc39e63"
-  integrity sha512-4jmOKNeBTTsByeRq6mG3+CS/K2BJX4HNYoNRouQiVUFbLbColc3SBvJEJeuPH7BQQqY1RuHRpGSUibQqSw2LpA==
+  version "0.0.1-beta.2"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component/-/create-web-component-0.0.1-beta.2.tgz#8273b85490a5a0b6deef29211a24c4e2a14d31f8"
+  integrity sha512-a7mx8GyhnbrDrj51wvIDG2w0a3BHbLbewuDZ26H76S1gK9fo7n7kBrcVizGt6/GrC7bXDN3KE84D1EoEAUbDMg==
 
 "@mfdemo/global-router-react-router@^0.0.1-beta.1":
-  version "0.0.1-beta.1"
-  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/global-router-react-router/-/global-router-react-router-0.0.1-beta.1.tgz#f0de38471a29b79489e72fe87955a4d93b0ce67e"
-  integrity sha512-jrtMpOh0h6U40h3eEQ34NXfJQUREjOblB+uyPLq6x2nELD9sTLSBs5mGQJQiN2NeS0ieIbwRu6NYukNIm6e2cw==
+  version "0.0.1-beta.2"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/global-router-react-router/-/global-router-react-router-0.0.1-beta.2.tgz#1057aa783c440b1d3acffd3a1c6178540bc09532"
+  integrity sha512-YQRdry6dcLl1VSDyiSg3ArPdU7IM/oJ7gpvCXF9kghuJ0wDjkEHgNuYAU1KLDrL/fvqgdVjgzwPD2KD61OTC/A==
 
 "@mfdemo/webpack-base@^0.0.1-beta":
   version "0.0.1-beta.3"

@@ -26,21 +26,21 @@
   integrity sha512-Fxt+AfXgjMoin2maPIYzFZnQjAXjAL0PHscM5pRTtatFqB+vZxAM9tLp2Optnuw3QOQC40jTNeGYFOMvyf7v9g==
 
 "@mfdemo/create-web-component-vue@^0.0.1-beta.1":
-  version "0.0.1-beta.1"
-  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component-vue/-/create-web-component-vue-0.0.1-beta.1.tgz#604ff4d800ee1dd1f48ef5b2802960e1438c5a15"
-  integrity sha512-xmee2lmqMgdA7GAskXLLdgBNhRKhLLs54jarvsbplPbIjjjmeIe9QNv420audiwbVuf2Oh/RQ/MtUHKTWJ/5Xg==
+  version "0.0.1-beta.2"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component-vue/-/create-web-component-vue-0.0.1-beta.2.tgz#fed20fdc7194337d4179c888cd9d1170fe44cfe3"
+  integrity sha512-YTv3yN2u6rnrdumn9nU0w7FXal6/NcqNr07Z5EnGR9aESIuXwq3aP1SUObnctLM+uUohptMkQREG1M/CS3U48g==
   dependencies:
     "@mfdemo/create-web-component" "^0.0.1-beta.1"
 
 "@mfdemo/create-web-component@^0.0.1-beta.1":
-  version "0.0.1-beta.1"
-  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component/-/create-web-component-0.0.1-beta.1.tgz#2571dcaf4b2b57686f4942a65f36c535bcc39e63"
-  integrity sha512-4jmOKNeBTTsByeRq6mG3+CS/K2BJX4HNYoNRouQiVUFbLbColc3SBvJEJeuPH7BQQqY1RuHRpGSUibQqSw2LpA==
+  version "0.0.1-beta.2"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/create-web-component/-/create-web-component-0.0.1-beta.2.tgz#8273b85490a5a0b6deef29211a24c4e2a14d31f8"
+  integrity sha512-a7mx8GyhnbrDrj51wvIDG2w0a3BHbLbewuDZ26H76S1gK9fo7n7kBrcVizGt6/GrC7bXDN3KE84D1EoEAUbDMg==
 
 "@mfdemo/global-router-vue-router@^0.0.1-beta.1":
-  version "0.0.1-beta.2"
-  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/global-router-vue-router/-/global-router-vue-router-0.0.1-beta.2.tgz#e9da472a91ea65a1827ca61ef67fed0050cefc9b"
-  integrity sha512-lOiTgD/UsJHT0pms5TniRKgKR4v/BKOqDcDImO0txyKVTzSWN51DhVR96R1iM+ldBK6+fAjm4/VSWKLgUsFUpA==
+  version "0.0.1-beta.3"
+  resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@mfdemo/global-router-vue-router/-/global-router-vue-router-0.0.1-beta.3.tgz#c46e3bde5fc0e3944cbf72620af5bdabb10ceaa4"
+  integrity sha512-JIJOJY2vmCV2D0KbXqC7bDXhvj+AOIatLfHVerZ5WjkT3ELHMQuvNqoqXiiIZ+Golqrq4k8UVrMABe+eBYdyBw==
 
 "@mfdemo/webpack-base@^0.0.1-beta":
   version "0.0.1-beta.3"
