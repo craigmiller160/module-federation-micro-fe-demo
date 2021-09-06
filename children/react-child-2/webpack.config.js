@@ -17,7 +17,7 @@ module.exports = merge(
     baseConfig,
     {
         devServer: {
-            port: 3002,
+            port: 3005,
             proxy: {
                 '/globalStore': {
                     target: 'http://localhost:3001',
@@ -41,7 +41,7 @@ module.exports = merge(
         },
         plugins: [
             new ModuleFederationPlugin({
-                name: 'reactChild1',
+                name: 'reactChild2',
                 filename: 'remoteEntry.js',
                 remotes: {
                     globalStore: 'globalStore@/globalStore/remoteEntry.js'
