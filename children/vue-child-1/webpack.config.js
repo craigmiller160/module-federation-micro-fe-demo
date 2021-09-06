@@ -7,7 +7,10 @@ const { dependencies } = require('./package.json');
 const shareDeps = {};
 if (process.env.SHARE_DEPS === 'true') {
     shareDeps.shared = {
-        ...(dependencies || {})
+        ...(dependencies || {}),
+        '@mfdemo/create-web-component': {
+            singleton: true
+        }
     };
 }
 
