@@ -3,6 +3,12 @@ const { merge } = require('webpack-merge');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 const { dependencies } = require('./package.json');
+const shareDeps = {};
+if (process.env.SHARE_DEPS === 'true') {
+    shareDeps.shared = {
+        ...(dependencies || {})
+    };
+}
 
 module.exports = merge(
     baseConfig,
@@ -17,9 +23,7 @@ module.exports = merge(
                 exposes: {
                     '.': './src/index.js'
                 },
-                shared: {
-                    ...dependencies
-                }
+                ...shareDeps
             })
         ]
     }
