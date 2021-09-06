@@ -40,7 +40,7 @@ export default {
       flex-direction: row;
       justify-content: center;
 
-      h1 {
+      :global(h1) {
         text-align: center;
       }
     }
