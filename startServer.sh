@@ -17,4 +17,6 @@ echo "Starting React Child 2"
 yarn start:reactChild2 1>/dev/null 2>/dev/null &
 echo "Starting Svelte Child 2"
 yarn start:svelteChild2 1>/dev/null 2>/dev/null &
+echo "Starting Vue Child 2"
+yarn start:vueChild2 1>/dev/null 2>/dev/null &
 
