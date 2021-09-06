@@ -4,6 +4,12 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 const { VueLoaderPlugin } = require('vue-loader');
 
 const { dependencies } = require('./package.json');
+const shareDeps = {};
+if (process.env.SHARE_DEPS === 'true') {
+    shareDeps.shared = {
+        ...(dependencies || {})
+    };
+}
 
 module.exports = merge(
     baseConfig,
@@ -36,9 +42,7 @@ module.exports = merge(
                 exposes: {
                     '.': './src/bootstrap.js'
                 },
-                shared: {
-                    ...dependencies
-                }
+                ...shareDeps
             })
         ],
         module: {

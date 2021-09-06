@@ -5,6 +5,12 @@ const preprocess = require('svelte-preprocess');
 const path = require('path');
 
 const { dependencies } = require('./package.json');
+const shareDeps = {};
+if (process.env.SHARE_DEPS === 'true') {
+    shareDeps.shared = {
+        ...(dependencies || {})
+    };
+}
 
 const PRODUCTION_ENV = 'production';
 const isProd = process.env.NODE_ENV === PRODUCTION_ENV;
@@ -68,9 +74,7 @@ module.exports = merge(
                 exposes: {
                     '.': './src/bootstrap.js'
                 },
-                shared: {
-                    ...dependencies
-                }
+                ...shareDeps
             })
         ]
     }
