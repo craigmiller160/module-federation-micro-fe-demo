@@ -1,0 +1,31 @@
+{
+  "name": "@mfdemo/react-child-2",
+  "version": "0.0.1-beta",
+  "sideEffects": false,
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve",
+    "build": "cross-env NODE_ENV=production webpack",
+    "build:share": "cross-env NODE_ENV=production SHARE_DEPS=true webpack",
+    "analyze": "cross-env NODE_ENV=production ANALYZE=true webpack"
+  },
+  "dependencies": {
+    "@mfdemo/create-web-component-react": "^0.0.1-beta.1",
+    "@mfdemo/global-router-react-router": "^0.0.1-beta.1",
+    "axios": "^0.21.1",
+    "core-js": "^3.16.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@mfdemo/webpack-base": "^0.0.1-beta",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3"
+  }
+}
