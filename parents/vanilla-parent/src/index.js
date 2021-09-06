@@ -5,3 +5,4 @@ import('reactChild1');
 import('svelteChild1');
 import('vueChild1');
 import('reactChild2');
+import('svelteChild2');
