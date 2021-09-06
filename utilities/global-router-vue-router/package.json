@@ -2,6 +2,7 @@
   "name": "@mfdemo/global-router-vue-router",
   "version": "0.0.1-beta",
   "main": "lib/index.common.js",
+  "sideEffects": false,
   "publishConfig": {
     "registry": "https://craigmiller160.ddns.net:30003/repository/npm-private/"
   },

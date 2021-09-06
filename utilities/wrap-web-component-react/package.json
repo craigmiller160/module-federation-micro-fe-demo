@@ -1,6 +1,7 @@
 {
   "name": "@mfdemo/wrap-web-component-react",
   "version": "0.0.1-beta",
+  "sideEffects": false,
   "main": "index.js",
   "publishConfig": {
     "registry": "https://craigmiller160.ddns.net:30003/repository/npm-private/"
