@@ -14,3 +14,6 @@ sudo kill $vueChild1Pid
 
 svelteChild1Pid=$(sudo lsof -t -i:3003)
 sudo kill $svelteChild1Pid
+
+reactChild2Pid=$(sudo lsof -t -i:3005)
+sudo kill $reactChild2Pid
