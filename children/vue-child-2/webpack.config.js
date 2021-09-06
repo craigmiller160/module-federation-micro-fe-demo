@@ -37,7 +37,7 @@ module.exports = merge(
         plugins: [
             new VueLoaderPlugin(),
             new ModuleFederationPlugin({
-                name: 'vueChild1',
+                name: 'vueChild2',
                 filename: 'remoteEntry.js',
                 remotes: {
                     globalStore: 'globalStore@/globalStore/remoteEntry.js'

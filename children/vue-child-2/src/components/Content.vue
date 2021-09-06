@@ -1,6 +1,6 @@
 <template>
   <div class="Content">
-    <h1>Vue Child 1</h1>
+    <h1>Vue Child 2</h1>
     <router-view :users="users" />
   </div>
 </template>
