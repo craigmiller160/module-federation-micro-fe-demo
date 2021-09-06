@@ -2,6 +2,14 @@ const baseConfig = require('@mfdemo/webpack-base/webpack.config');
 const { merge } = require('webpack-merge');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
+const { dependencies } = require('./package.json');
+const shareDeps = {};
+if (process.env.SHARE_DEPS === 'true') {
+    shareDeps.shared = {
+        ...(dependencies || {})
+    };
+}
+
 module.exports = merge(
     baseConfig,
     {
@@ -46,7 +54,8 @@ module.exports = merge(
                     reactChild1: 'reactChild1@/reactChild1/remoteEntry.js',
                     svelteChild1: 'svelteChild1@/svelteChild1/remoteEntry.js',
                     vueChild1: 'vueChild1@/vueChild1/remoteEntry.js'
-                }
+                },
+                ...shareDeps
             })
         ]
     }
