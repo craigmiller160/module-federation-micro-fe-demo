@@ -14,4 +14,10 @@ With Sharing create web-comp lib: 4,373,213
 
 Now Adding Duplicate Components: 4,578,911
 
+Final Sizes:
+
+Without Sharing: 7,766,949
+
+With Sharing: 4,943,783
+
 # TODO add polyfills for web components
