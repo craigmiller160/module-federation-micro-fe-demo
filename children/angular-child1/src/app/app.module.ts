@@ -18,7 +18,7 @@ import { createCustomElement } from '@angular/elements';
 export class AppModule {
   constructor(injector: Injector) {
     const custom = createCustomElement(AppComponent, { injector });
-    customElements.define('mfe-one', custom);
+    customElements.define('angular-child-1', custom);
   }
   ngDoBootstrap() {}
 }
