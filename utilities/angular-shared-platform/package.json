@@ -1,6 +1,12 @@
 {
   "name": "@mfdemo/angular-shared-platform",
   "version": "0.0.1-beta",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    ".yalc"
+  ],
   "scripts": {
     "build": "tsc"
   },

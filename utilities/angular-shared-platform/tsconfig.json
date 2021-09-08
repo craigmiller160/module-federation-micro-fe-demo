@@ -3,7 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./build",
+    "outDir": "./lib",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitReturns": true,
