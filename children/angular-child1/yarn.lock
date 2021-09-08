@@ -1268,6 +1268,9 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
+"@mfdemo/angular-shared-platform@file:.yalc/@mfdemo/angular-shared-platform":
+  version "0.0.1-beta"
+
 "@ngtools/webpack@12.2.5":
   version "12.2.5"
   resolved "https://craigmiller160.ddns.net:30003/repository/npm-group/@ngtools/webpack/-/webpack-12.2.5.tgz#f0077e302434b00bc67924142c88a844f320f7b9"

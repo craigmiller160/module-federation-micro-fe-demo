@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@mfdemo/angular-shared-platform": "file:.yalc/@mfdemo/angular-shared-platform",
     "document-register-element": "^1.7.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
