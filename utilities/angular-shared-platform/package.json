@@ -1,8 +1,12 @@
 {
   "name": "@mfdemo/angular-shared-platform",
   "version": "0.0.1-beta",
+  "scripts": {
+    "build": "tsc"
+  },
   "devDependencies": {
     "@angular/core": "^12.2.5",
-    "@angular/platform-browser-dynamic": "^12.2.5"
+    "@angular/platform-browser-dynamic": "^12.2.5",
+    "typescript": "~4.3.5"
   }
 }
