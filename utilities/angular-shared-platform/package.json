@@ -5,8 +5,10 @@
     "build": "tsc"
   },
   "devDependencies": {
+    "@angular/compiler": "^12.2.5",
     "@angular/core": "^12.2.5",
     "@angular/platform-browser-dynamic": "^12.2.5",
+    "rxjs": "^7.3.0",
     "typescript": "~4.3.5"
   }
 }
