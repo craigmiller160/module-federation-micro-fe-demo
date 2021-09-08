@@ -26,7 +26,7 @@ module.exports = {
       name: 'angularChild1',
       filename: 'remoteEntry.js',
       exposes: {
-        '.': './src/bootstrap.js'
+        '.': './src/bootstrap.ts'
       },
       shared: share({
         // TODO need to make sure other dependencies are added here
