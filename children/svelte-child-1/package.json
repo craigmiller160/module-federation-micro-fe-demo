@@ -15,7 +15,7 @@
     "svelte-preprocess": "^4.7.4"
   },
   "dependencies": {
-    "svelte": "^3.42.1",
+    "svelte": "^3.49.0",
     "@mfdemo/create-web-component-svelte": "^0.0.1-beta.1",
     "@mfdemo/global-router-svelte-navigator": "^0.0.1-beta.1",
     "axios": "^0.21.1",
